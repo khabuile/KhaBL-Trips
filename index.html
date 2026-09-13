@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lịch trình 3 ngày Hakone · Fuji · Cắm trại — 21–23/9 cho 14 người">
+<meta property="og:title" content="🗾 Lịch trình Hakone & Fuji 21–23/9">
+<meta property="og:description" content="8 người lớn · 6 bé · Hakone Shrine · Owakudani · Yunessun · Koan Campground · Fuji Safari">
+<meta property="og:type" content="website">
+<title>Lịch trình Hakone · Fuji · 21–23/9</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
+<style>
+/* ─── RESET & BASE ─── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f0f2f5;
+  color: #1c1c2e;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── TOKENS ─── */
+:root {
+  --d1: #2b4c8c;        /* Ngày 1 — Indigo biển sâu */
+  --d1-light: #dce6f7;
+  --d1-mid: #6b8dc4;
+  --d2: #1e6b45;        /* Ngày 2 — Xanh rừng Fuji */
+  --d2-light: #d4edd9;
+  --d2-mid: #5aaa78;
+  --d3: #6b2d72;        /* Ngày 3 — Tím anh đào */
+  --d3-light: #ead4ec;
+  --d3-mid: #a96fb0;
+  --ink: #1c1c2e;
+  --muted: #6b7280;
+  --surface: #ffffff;
+  --border: #e5e7eb;
+  --warn-bg: #fffbeb;
+  --warn-border: #fcd34d;
+  --warn-text: #78350f;
+}
+
+/* ─── HERO ─── */
+.hero {
+  background: linear-gradient(135deg, #0f1e3d 0%, #1a3360 45%, #0d2b1a 100%);
+  padding: 56px 24px 48px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: '富士山';
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(80px, 20vw, 200px);
+  font-weight: 700;
+  color: rgba(255,255,255,0.04);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  white-space: nowrap;
+  letter-spacing: -4px;
+}
+.hero-inner { position: relative; z-index: 1; max-width: 680px; margin: 0 auto; }
+.hero-kana {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 13px;
+  letter-spacing: 4px;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 16px;
+  display: block;
+}
+.hero h1 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(28px, 6vw, 46px);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+.hero-desc {
+  font-size: 15px;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.7;
+  margin-bottom: 36px;
+}
+.hero-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.pill {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 100px;
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.8);
+  backdrop-filter: blur(4px);
+}
+.pill-icon { font-size: 15px; }
+
+/* ─── DAY TABS ─── */
+.tab-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.tab-bar::-webkit-scrollbar { display: none; }
+.tab-btn {
+  flex: 1;
+  min-width: 110px;
+  padding: 14px 16px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: color .2s, border-color .2s;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 1.3;
+}
+.tab-btn span { display: block; font-size: 11px; font-weight: 400; opacity: .7; margin-top: 2px; }
+.tab-btn.active-d1 { color: var(--d1); border-bottom-color: var(--d1); }
+.tab-btn.active-d2 { color: var(--d2); border-bottom-color: var(--d2); }
+.tab-btn.active-d3 { color: var(--d3); border-bottom-color: var(--d3); }
+
+/* ─── MAIN LAYOUT ─── */
+.main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+
+/* ─── DAY PANEL ─── */
+.day-panel { display: none; }
+.day-panel.active { display: block; }
+
+.day-header-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+  padding: 20px 22px;
+  border-radius: 12px;
+  color: #fff;
+}
+.d1 .day-header-bar { background: linear-gradient(120deg, var(--d1) 0%, #4168b0 100%); }
+.d2 .day-header-bar { background: linear-gradient(120deg, var(--d2) 0%, #2d8a57 100%); }
+.d3 .day-header-bar { background: linear-gradient(120deg, var(--d3) 0%, #924f9a 100%); }
+
+.day-num {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  opacity: .9;
+}
+.day-meta { flex: 1; }
+.day-meta-date { font-size: 16px; font-weight: 700; }
+.day-meta-route { font-size: 13px; opacity: .75; margin-top: 3px; line-height: 1.4; }
+.day-meta-theme {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 11px;
+  font-weight: 500;
+  background: rgba(255,255,255,0.18);
+  border-radius: 4px;
+  padding: 3px 10px;
+  letter-spacing: .5px;
+}
+
+/* ─── TIMELINE ─── */
+.timeline { position: relative; }
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 19px;
+  top: 12px;
+  bottom: 12px;
+  width: 2px;
+  background: var(--border);
+  border-radius: 2px;
+}
+
+.stop {
+  position: relative;
+  display: flex;
+  gap: 0;
+  margin-bottom: 8px;
+  padding-left: 52px;
+}
+.stop-dot {
+  position: absolute;
+  left: 12px;
+  top: 18px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 2.5px solid var(--border);
+  z-index: 1;
+  transition: border-color .2s;
+}
+.d1 .stop.key .stop-dot { border-color: var(--d1); background: var(--d1); }
+.d2 .stop.key .stop-dot { border-color: var(--d2); background: var(--d2); }
+.d3 .stop.key .stop-dot { border-color: var(--d3); background: var(--d3); }
+.d1 .stop-dot { border-color: var(--d1-mid); }
+.d2 .stop-dot { border-color: var(--d2-mid); }
+.d3 .stop-dot { border-color: var(--d3-mid); }
+
+.stop-card {
+  flex: 1;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  transition: box-shadow .15s;
+}
+.stop.key .stop-card {
+  border-left-width: 3px;
+}
+.d1 .stop.key .stop-card { border-left-color: var(--d1); }
+.d2 .stop.key .stop-card { border-left-color: var(--d2); }
+.d3 .stop.key .stop-card { border-left-color: var(--d3); }
+
+.stop-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.stop-emoji { font-size: 22px; line-height: 1; flex-shrink: 0; margin-top: 1px; }
+.stop-info { flex: 1; min-width: 0; }
+.stop-time {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  color: var(--muted);
+  margin-bottom: 3px;
+}
+.stop-name { font-size: 15px; font-weight: 700; line-height: 1.35; }
+.stop-note {
+  margin-top: 7px;
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.65;
+}
+.stop-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+.tag {
+  font-size: 11.5px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 100px;
+  line-height: 1.4;
+}
+.tag-warn { background: var(--warn-bg); color: var(--warn-text); border: 1px solid var(--warn-border); }
+.tag-info { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
+.tag-camp { background: #f0fdf4; color: #166534; border: 1px solid #bbf7d0; }
+.tag-food { background: #fdf2f8; color: #831843; border: 1px solid #fbcfe8; }
+.tag-cash { background: #fefce8; color: #713f12; border: 1px solid #fde68a; }
+
+.map-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--d1);
+  text-decoration: none;
+  padding: 5px 12px;
+  border-radius: 6px;
+  background: var(--d1-light);
+  transition: opacity .15s;
+}
+.map-btn:hover { opacity: .8; }
+.d2 .map-btn { color: var(--d2); background: var(--d2-light); }
+.d3 .map-btn { color: var(--d3); background: var(--d3-light); }
+.map-btn svg { flex-shrink: 0; }
+
+/* ─── DRIVE CONNECTOR ─── */
+.drive {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 2px 8px 2px 52px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.drive-line { flex: 1; height: 1px; background: var(--border); }
+.drive-icon { font-size: 14px; }
+
+/* ─── ALERT BOX ─── */
+.alert-box {
+  margin-top: 20px;
+  padding: 14px 18px;
+  background: var(--warn-bg);
+  border: 1px solid var(--warn-border);
+  border-radius: 10px;
+  font-size: 13px;
+  color: var(--warn-text);
+  line-height: 1.7;
+}
+.alert-box strong { font-weight: 700; }
+
+/* ─── OVERVIEW PANEL ─── */
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.ov-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px 20px;
+}
+.ov-num {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.ov-label { font-size: 12px; color: var(--muted); }
+.ov-card:nth-child(1) .ov-num { color: var(--d1); }
+.ov-card:nth-child(2) .ov-num { color: var(--d2); }
+.ov-card:nth-child(3) .ov-num { color: var(--d3); }
+.ov-card:nth-child(4) .ov-num { color: #b45309; }
+
+.day-summary-list { display: flex; flex-direction: column; gap: 10px; }
+.ds-item {
+  display: flex;
+  gap: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 18px;
+  cursor: pointer;
+  transition: box-shadow .15s;
+  text-decoration: none;
+  color: inherit;
+}
+.ds-item:hover { box-shadow: 0 2px 12px rgba(0,0,0,.08); }
+.ds-stripe {
+  width: 4px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+.ds-item:nth-child(1) .ds-stripe { background: var(--d1); }
+.ds-item:nth-child(2) .ds-stripe { background: var(--d2); }
+.ds-item:nth-child(3) .ds-stripe { background: var(--d3); }
+.ds-body { flex: 1; }
+.ds-date { font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+.ds-title { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+.ds-stops { font-size: 12px; color: var(--muted); line-height: 1.6; }
+.ds-arrow { align-self: center; color: var(--muted); font-size: 20px; }
+
+/* ─── FOOTER ─── */
+footer {
+  background: var(--ink);
+  padding: 28px 24px;
+  text-align: center;
+}
+footer p { font-size: 12.5px; color: rgba(255,255,255,0.35); line-height: 1.8; }
+footer .fuji-text {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 20px;
+  color: rgba(255,255,255,0.1);
+  letter-spacing: 6px;
+  margin-top: 10px;
+  display: block;
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 500px) {
+  .hero { padding: 40px 20px 36px; }
+  .main { padding: 24px 12px 56px; }
+  .stop-name { font-size: 14px; }
+  .day-header-bar { padding: 16px 18px; gap: 12px; }
+  .day-num { font-size: 32px; }
+  .overview-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ─── PRINT ─── */
+@media print {
+  .tab-bar { display: none; }
+  .day-panel { display: block !important; page-break-before: always; }
+  .map-btn { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ HERO ═══ -->
+<header class="hero">
+  <div class="hero-inner">
+    <span class="hero-kana">は こ ね ・ ふ じ さ ん</span>
+    <h1>Hakone · Fuji<br>Cắm trại Motosu</h1>
+    <p class="hero-desc">8 người lớn · 6 bé nhỏ · Di chuyển bằng ô tô<br>Lịch giữ nhịp thoải mái, chừa thời gian dự phòng cho trẻ nhỏ</p>
+    <div class="hero-pills">
+      <div class="pill"><span class="pill-icon">📅</span> 21 – 23 tháng 9</div>
+      <div class="pill"><span class="pill-icon">👨‍👩‍👧‍👦</span> 14 người</div>
+      <div class="pill"><span class="pill-icon">🗺️</span> 14 điểm đến</div>
+      <div class="pill"><span class="pill-icon">🏕️</span> 1 đêm cắm trại</div>
+    </div>
+  </div>
+</header>
+
+<!-- ═══ TAB BAR ═══ -->
+<nav class="tab-bar" role="tablist">
+  <button class="tab-btn active-d1" role="tab" aria-selected="true" onclick="switchTab('overview')">
+    Tổng quan <span>3 ngày</span>
+  </button>
+  <button class="tab-btn" role="tab" onclick="switchTab('d1')">
+    Ngày 1 · 21/9 <span>Hakone</span>
+  </button>
+  <button class="tab-btn" role="tab" onclick="switchTab('d2')">
+    Ngày 2 · 22/9 <span>Hồ Fuji</span>
+  </button>
+  <button class="tab-btn" role="tab" onclick="switchTab('d3')">
+    Ngày 3 · 23/9 <span>Safari & Về nhà</span>
+  </button>
+</nav>
+
+<!-- ═══ MAIN ═══ -->
+<main class="main">
+
+  <!-- ── OVERVIEW ── -->
+  <section class="day-panel active" id="panel-overview">
+    <div class="overview-grid">
+      <div class="ov-card">
+        <div class="ov-num">3</div>
+        <div class="ov-label">Ngày · Thứ 7 đến Thứ 2</div>
+      </div>
+      <div class="ov-card">
+        <div class="ov-num">14</div>
+        <div class="ov-label">Điểm đến · Đền · Hồ · Safari</div>
+      </div>
+      <div class="ov-card">
+        <div class="ov-num">14</div>
+        <div class="ov-label">Thành viên · 8 lớn + 6 bé</div>
+      </div>
+      <div class="ov-card">
+        <div class="ov-num">~500km</div>
+        <div class="ov-label">Tổng quãng đường ước tính</div>
+      </div>
+    </div>
+
+    <div class="day-summary-list">
+      <a class="ds-item" href="#" onclick="switchTab('d1');return false;">
+        <div class="ds-stripe"></div>
+        <div class="ds-body">
+          <div class="ds-date">Thứ Bảy · 21/9</div>
+          <div class="ds-title">🌋 Hakone → Fujiyoshida</div>
+          <div class="ds-stops">Ebina SA · Hakone Shrine · Owakudani (trứng đen) · Yunessun · Nhà Tatsugaoka, Fujiyoshida</div>
+        </div>
+        <div class="ds-arrow">›</div>
+      </a>
+      <a class="ds-item" href="#" onclick="switchTab('d2');return false;">
+        <div class="ds-stripe"></div>
+        <div class="ds-body">
+          <div class="ds-date">Chủ Nhật · 22/9</div>
+          <div class="ds-title">🦢 Yamanakako → Oshino → Kawaguchiko → Koan</div>
+          <div class="ds-stops">Thiên nga · 8 suối Oshino · Oishi Park · Mì hoto · Mua BBQ · Cắm trại hồ Motosu</div>
+        </div>
+        <div class="ds-arrow">›</div>
+      </a>
+      <a class="ds-item" href="#" onclick="switchTab('d3');return false;">
+        <div class="ds-stripe"></div>
+        <div class="ds-body">
+          <div class="ds-date">Thứ Hai · 23/9</div>
+          <div class="ds-title">🦁 Koan → Fuji Safari → Gotemba → Funabashi</div>
+          <div class="ds-stops">Asagiri Kogen · Fuji Safari Park · Gotemba Outlets · Ebina SA · Về nhà</div>
+        </div>
+        <div class="ds-arrow">›</div>
+      </a>
+    </div>
+
+    <div class="alert-box" style="margin-top:20px;">
+      <strong>📌 Nhắc chung cả đoàn</strong><br>
+      · Koan Campground: đến đúng giờ check-in · <strong>check-out trước 10:00</strong> ngày 23/9<br>
+      · Owakudani: <strong>rời trước 11:30</strong> ngày lễ để tránh ùn tắc đường núi<br>
+      · Houtou Fudou: <strong>chỉ nhận tiền mặt</strong> · đến sớm tránh xếp hàng<br>
+      · Fuji Safari: mang <strong>tiền mặt</strong> cho phần cho thú ăn Jungle Bus<br>
+      · Cho thiên nga ăn: <strong>chỉ dùng thức ăn mua tại chỗ</strong>, không bánh mì
+    </div>
+  </section>
+
+  <!-- ── DAY 1 ── -->
+  <section class="day-panel d1" id="panel-d1">
+    <div class="day-header-bar">
+      <div class="day-num">1</div>
+      <div class="day-meta">
+        <div class="day-meta-date">Thứ Bảy · 21 tháng 9</div>
+        <div class="day-meta-route">Funabashi → Hakone → Fujiyoshida</div>
+        <span class="day-meta-theme">Đền thần · Núi lửa · Onsen nước nóng</span>
+      </div>
+    </div>
+
+    <div class="timeline">
+
+      <div class="stop">
+        <div class="stop-dot"></div>
+        <div class="stop-card">
+          <div class="stop-top">
+            <span class="stop-emoji">🏠</span>
+            <div class="stop-info">
+              <div class="stop-time">05:00</div>
+              <div class="stop-name">Xuất phát — Maruyama, Funabashi</div>
+            </div>
+          </div>
+          <div class="stop-note">Khởi hành sớm tránh kẹt xe trên cao tốc Tōmei hướng Odawara.</div>
+          <a class="map-btn" href="https://maps.google.com/?q=Maruyama,Funabashi,Chiba" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Xem bản đồ
+          </a>
+        </div>
+      </div>
+
+      <div class="drive"><span class="drive-icon">🚗</span><div class="drive-line"></div>~90 phút · Cao tốc Tōmei</div>
+
+      <div class="stop">
+        <div class="stop-dot"></div>
+        <div class="stop-card">
+          <div class="stop-top">
+            <span class="stop-emoji">🍱</span>
+            <div class="stop-info">
+              <div class="stop-time">06:30 – 07:30</div>
+              <div class="stop-name">Ebina SA (下り) — Ăn sáng & Nghỉ ngơi</div>
+            </div>
+          </div>
+          <div class="stop-note">Dừng 1 tiếng · ăn sáng, vệ sinh, nạp năng lượng. Ebina SA có nhiều lựa chọn đồ ăn và souvenirs giới hạn.</div>
+          <div class="stop-tags">
+            <span class="tag tag-info">🕐 Mở 24/7</span>
+          </div>
+          <a class="map-btn" href="https://maps.google.com/?cid=10313570125232911023" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Xem bản đồ
+          </a>
+        </div>
+      </div>
+
+      <div class="drive"><span class="drive-icon">🚗</span><div class="drive-line"></div>~90 phút · Qua Odawara → Hakone</div>
+
+      <div class="stop key">
+        <div class="stop-dot"></div>
+        <div class="stop-card">
+          <div class="stop-top">
+            <span class="stop-emoji">⛩️</span>
+            <div class="stop-info">
+              <div class="stop-time">09:00 – 09:45</div>
+              <div class="stop-name">Hakone Shrine 箱根神社</div>
+            </div>
+          </div>
+          <div class="stop-note">Cổng torii nổi trên mặt hồ Ashi · bậc thang dưới tán tùng cổ thụ trăm tuổi · chụp ảnh đẹp nhất buổi sáng khi ánh sáng vàng còn thấp.</div>
+          <div class="stop-tags">
+            <span class="tag tag-warn">⚠️ Bãi xe mở từ 07:00</span>
+            <span class="tag tag-info">Miễn phí vào cổng</span>
+          </div>
+          <a class="map-btn" href="https://maps.google.com/?cid=12314146949413986458" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Xem bản đồ
+          </a>
+        </div>
+      </div>
+
+      <div class="drive"><span class="drive-icon">🚗</span><div class="drive-line"></div>~25 phút · Đường núi lên Owakudani</div>
+
+      <div class="stop key">
+        <div class="stop-dot"></div>
+        <div class="stop-card">
+          <div class="stop-top">
+            <span class="stop-emoji">🌋</span>
+            <div class="stop-info">
+              <div class="stop-time">10:15 – 11:15</div>
+              <div class="stop-name">Owakudani — Trứng đen 黒たまご</div>
+            </div>
+          </div>
+          <div class="stop-note">Ngắm núi lửa đang hoạt động · mùi lưu huỳnh đặc trưng · mua và ăn trứng đen nấu trong suối địa nhiệt (bán từ 09:00, đến sớm là tốt). Trứng bán theo gói 4 quả.</div>
+          <div class="stop-tags">
+            <span class="tag tag-warn">⚠️ Rời trước 11:30 ngày lễ — dễ ùn tắc</span>
+            <span class="tag tag-info">Bán từ 09:00 · Đóng 16:20</span>
+          </div>
+          <a class="map-btn" href="https://maps.google.com/?cid=15008591917083050291" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Xem bản đồ
+          </a>
+        </div>
+      </div>
+
+      <div class="drive"><span class="drive-icon">🚗</span><div class="drive-line"></div>~25 phút · Xuống núi về Kowakien</div>
+
+      <div class="stop key">
+        <div class="stop-dot"></div>
+        <div class="stop-card">
+          <div class="stop-top">
+            <span class="stop-emoji">🌊</span>
+            <div class="stop-info">
+              <div class="stop-time">11:45 – 17:00</div>
+              <div class="stop-name">Hakone Kowakien Yunessun</div>
+            </div>
+          </div>
+          <div class="stop-note">Đến 11:45 · đỗ xe · ăn trưa · thay đồ bơi. Chơi từ 13:00–17:00 theo vé đã mua. Hồ nước nóng theo chủ đề: rượu sake, cà phê, trà xanh · cầu trượt nước · khu trẻ em.</div>
+          <div class="stop-tags">
+            <span class="tag tag-food">🎫 Đã mua vé trước</span>
+            <span class="tag tag-info">T7–CN: Mở 09:00–19:00</span>
+          </div>
+          <a class="map-btn" href="https://maps.google.com/?cid=11625870680606186088" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Xem bản đồ
+          </a>
+        </div>
+      </div>
+
+      <div class="drive"><span class="drive-icon">🚗</span><div class="drive-line"></div>~1.5–2 tiếng · Qua Gotemba → Fujiyoshida</div>
+
+      <div class="stop">
+        <div class="stop-dot"></div>
+        <div class="stop-card">
+          <div class="stop-top">
+            <span class="stop-emoji">🏡</span>
+            <div class="stop-info">
+              <div class="stop-time">Từ 19:00</div>
+              <div class="stop-name">Nhà ở Fujiyoshida — 1-3-22 Tatsugaoka</div>
+            </div>
+          </div>
+          <div class="stop-note">Nhận nhà · ăn tối · nghỉ ngơi. Chuẩn bị sẵn đồ camping cho ngày hôm sau.<br><small style="color:#9ca3af;margin-top:4px;display:block;">📍 1-chōme-3-22 Tatsugaoka, Fujiyoshida, Yamanashi 403-0014</small></div>
+          <div class="stop-tags"><span class="tag tag-camp">🌙 Nghỉ đêm tại nhà</span></div>
+          <a class="map-btn" href="https://maps.google.com/?q=1-3-22+Tatsugaoka,Fujiyoshida,Yamanashi+403-0014" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Xem bản đồ
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── DAY 2 ── -->
+  <section class="day-panel d2" id="panel-d2">
+    <div class="day-header-bar">
+      <div class="day-num">2</div>
+      <div class="day-meta">
+        <div class="day-meta-date">Chủ Nhật · 22 tháng 9</div>
+        <div class="day-meta-route">Fujiyoshida → Yamanakako → Oshino → Kawaguchiko → Koan</div>
+        <span class="day-meta-theme">Thiên nga · Suối Fuji · Cắm trại & BBQ</span>
+      </div>
+    </div>
+
+    <div class="timeline">
+
+      <div class="stop">
+        <div class="stop-dot"></div>
+        <div class="stop-card">
+          <div class="stop-top">
+            <span class="stop-emoji">🍳</span>
+            <div class="stop-info">
+              <div class="stop-time">07:30 – 08:30</div>
+              <div class="stop-name">Ăn sáng & chuẩn bị đồ camping tại nhà</div>
+            </div>
+          </div>
+          <div class="stop-note">Kiểm tra lại danh sách camping: lều, túi ngủ, đèn pin, đồ BBQ. Khởi hành lúc 08:45.</div>
+        </div>
+      </div>
+
+      <div class="drive"><span class="drive-icon">🚗</span><div class="drive-line"></div>~20 phút</div>
+
+      <div class="stop key">
+        <div class="stop-dot"></div>
+        <div class="stop-card">
+          <div class="stop-top">
+            <span class="stop-emoji">🦢</span>
+            <div class="stop-info">
+              <div class="stop-time">08:45 – 09:30</div>
+              <div class="stop-name">Hồ Yamanakako — Cho thiên nga ăn</div>
+            </div>
+          </div>
+          <div class="stop-note">Ngắm Fuji từ bờ hồ · cho thiên nga và vịt ăn. Có thể mua lon thức ăn chuyên dụng tại chỗ (~200¥). Hồ rộng, bé có chỗ chạy chơi thoải mái.</div>
+          <div class="stop-tags">
+            <span class="tag tag-warn">⚠️ Chỉ dùng thức ăn chuyên dụng — không bánh mì</span>
+          </div>
+          <a class="map-btn" href="https://maps.google.com/?cid=486079754156440068" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Xem bản đồ
+          </a>
+        </div>
+      </div>
+
+      <div class="drive"><span class="drive-icon">🚗</span><div class="drive-line"></div>~25 phút</div>
+
+      <div class="stop key">
+        <div class="stop-dot"></div>
+        <div class="stop-card">
+          <div class="stop-top">
+            <span class="stop-emoji">💧</span>
+            <div class="stop-info">
+              <div class="stop-time">10:00 – 11:15</div>
+              <div class="stop-name">Oshino Hakkai — 8 suối nước Fuji</div>
+            </div>
+          </div>
+          <div class="stop-note">Làng cổ Nhật Bản · 8 hồ suối trong veo từ tuyết núi Fuji lọc qua đá núi lửa hàng thập kỷ · nhà mái rạ truyền thống · hàng ăn vặt địa phương · mua quà lưu niệm.</div>
+          <div class="stop-tags">
+            <span class="tag tag-info">Mở 24/7 · Vào cổng miễn phí</span>
+          </div>
+          <a class="map-btn" href="https://maps.google.com/?cid=1601773399916388209" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Xem bản đồ
+          </a>
+        </div>
+      </div>
+
+      <div class="drive"><span class="drive-icon">🚗</span><div class="drive-line"></div>~25 phút</div>
+
+      <div class="stop">
+        <div class="stop-dot"></div>
+        <div class="stop-card">
+          <div class="stop-top">
+            <span class="stop-emoji">🌸</span>
+            <div class="stop-info">
+              <div class="stop-time">11:45 – 12:20</div>
+              <div class="stop-name">Oishi Park, Kawaguchiko</div>
+            </div>
+          </div>
+          <div class="stop-note">Bờ bắc hồ Kawaguchi với view Fuji đẹp nhất · bãi cỏ rộng cho bé chạy chơi · chụp ảnh gia đình · bán kem và nước uống tại chỗ.</div>
+          <div class="stop-tags">
+            <span class="tag tag-info">Mở 24/7 · Miễn phí</span>
+          </div>
+          <a class="map-btn" href="https://maps.google.com/?cid=11686369390762469636" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Xem bản đồ
+          </a>
+        </div>
+      </div>
+
+      <div class="drive"><span class="drive-icon">🚗</span><div class="drive-line"></div>~10 phút</div>
+
+      <div class="stop key">
+        <div class="stop-dot"></div>
+        <div class="stop-card">
+          <div class="stop-top">
+            <span class="stop-emoji">🍜</span>
+            <div class="stop-info">
+              <div class="stop-time">12:30 – 13:45</div>
+              <div class="stop-name">Houtou Fudou Kita Honten — Mì hoto</div>
+            </div>
+          </div>
+          <div class="stop-note">Đặc sản vùng Yamanashi · mì dày mềm (dày hơn udon) ninh lâu cùng bí ngô và rau củ trong nước dùng đậm vị · ấm bụng ngày thu.</div>
+          <div class="stop-tags">
+            <span class="tag tag-cash">💴 Chỉ nhận tiền mặt</span>
+            <span class="tag tag-warn">⚠️ Đến sớm tránh xếp hàng</span>
+            <span class="tag tag-info">Mở 11:00–20:00</span>
+          </div>
+          <a class="map-btn" href="https://maps.google.com/?cid=14826163660245978329" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Xem bản đồ
+          </a>
+        </div>
+      </div>
+
+      <div class="drive"><span class="drive-icon">🛒</span><div class="drive-line"></div>Ghé siêu thị trên đường · ~15 phút</div>
+
+      <div class="stop">
+        <div class="stop-dot"></div>
+        <div class="stop-card">
+          <div class="stop-top">
+            <span class="stop-emoji">🛒</span>
+            <div class="stop-info">
+              <div class="stop-time">13:45 – 14:40</div>
+              <div class="stop-name">Mua đồ BBQ · Nước · Đá · Đồ ăn sáng</div>
+            </div>
+          </div>
+          <div class="stop-note">Mua đủ: thịt bò / heo / gà, rau, xúc xích, đá, nước uống, bánh mì / onigiri cho bữa sáng hôm sau, than nướng (nếu camp không cung cấp).</div>
+          <div class="stop-tags">
+            <span class="tag tag-warn">⚠️ Mua đủ trước khi vào camp — không có siêu thị gần Koan</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drive"><span class="drive-icon">🚗</span><div class="drive-line"></div>~40 phút · Về phía hồ Motosu</div>
+
+      <div class="stop key">
+        <div class="stop-dot"></div>
+        <div class="stop-card">
+          <div class="stop-top">
+            <span class="stop-emoji">⛺</span>
+            <div class="stop-info">
+              <div class="stop-time">15:00 → Nghỉ đêm</div>
+              <div class="stop-name">Koan Campground — Hồ Motosu</div>
+            </div>
+          </div>
+          <div class="stop-note">
+            <strong>15:00–16:30</strong> Chọn chỗ, dựng lều, sắp xếp khu sinh hoạt<br>
+            <strong>16:30–17:45</strong> Chơi bờ hồ, chụp Fuji; SUP / canoe nếu thời tiết đẹp và đủ điều kiện<br>
+            <strong>18:00–19:30</strong> BBQ, tắm, nghỉ đêm
+          </div>
+          <div class="stop-tags">
+            <span class="tag tag-warn">⚠️ Check-out trước 10:00 ngày 23/9</span>
+            <span class="tag tag-camp">🏕️ Đã đặt chỗ xác nhận</span>
+          </div>
+          <a class="map-btn" href="https://maps.google.com/?cid=8610172201194176227" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Xem bản đồ
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="alert-box">
+      <strong>⚠️ Lưu ý Koan:</strong> Yêu cầu đến đúng giờ check-in đã đặt. Check-out <strong>bắt buộc trước 10:00</strong> sáng hôm sau. Đêm 22/9 từng hiển thị hết chỗ — lịch này chỉ áp dụng khi đã có xác nhận đặt chỗ.
+    </div>
+  </section>
+
+  <!-- ── DAY 3 ── -->
+  <section class="day-panel d3" id="panel-d3">
+    <div class="day-header-bar">
+      <div class="day-num">3</div>
+      <div class="day-meta">
+        <div class="day-meta-date">Thứ Hai · 23 tháng 9</div>
+        <div class="day-meta-route">Koan → Asagiri → Fuji Safari → Gotemba → Ebina → Funabashi</div>
+        <span class="day-meta-theme">Safari · Outlets · Đường về nhà</span>
+      </div>
+    </div>
+
+    <div class="timeline">
+
+      <div class="stop key">
+        <div class="stop-dot"></div>
+        <div class="stop-card">
+          <div class="stop-top">
+            <span class="stop-emoji">🌅</span>
+            <div class="stop-info">
+              <div class="stop-time">06:00 – 07:30</div>
+              <div class="stop-name">Dậy sớm ngắm Fuji — Thu dọn lều — Rời Koan</div>
+            </div>
+          </div>
+          <div class="stop-note">
+            <strong>06:00–06:30</strong> Ăn sáng nhẹ · ngắm hồ Motosu và Fuji trong bình minh<br>
+            <strong>06:30–07:30</strong> Thu dọn lều, trả khu camping, kiểm tra không bỏ sót đồ<br>
+            <strong>07:30</strong> Rời Koan
+          </div>
+          <div class="stop-tags">
+            <span class="tag tag-warn">⚠️ Rời trước 10:00 · Rời lúc 07:30 để kịp lịch</span>
+          </div>
+          <a class="map-btn" href="https://maps.google.com/?cid=8610172201194176227" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Xem bản đồ
+          </a>
+        </div>
+      </div>
+
+      <div class="drive"><span class="drive-icon">🚗</span><div class="drive-line"></div>~20 phút</div>
+
+      <div class="stop">
+        <div class="stop-dot"></div>
+        <div class="stop-card">
+          <div class="stop-top">
+            <span class="stop-emoji">🥛</span>
+            <div class="stop-info">
+              <div class="stop-time">08:00 – 08:30</div>
+              <div class="stop-name">Michi-no-Eki Asagiri Kogen — Ăn sáng</div>
+            </div>
+          </div>
+          <div class="stop-note">Trạm nghỉ đường bộ nổi tiếng vùng chân Fuji · sữa tươi nguyên chất từ bò đồng cỏ · kem mềm Fuji · bánh ngọt địa phương · view Fuji từ sân ngoài trời khi trời trong.</div>
+          <div class="stop-tags">
+            <span class="tag tag-info">Mở từ 08:00</span>
+          </div>
+          <a class="map-btn" href="https://maps.google.com/?cid=16947407297208273599" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Xem bản đồ
+          </a>
+        </div>
+      </div>
+
+      <div class="drive"><span class="drive-icon">🚗</span><div class="drive-line"></div>~45 phút · Qua Fujinomiya → Susono</div>
+
+      <div class="stop key">
+        <div class="stop-dot"></div>
+        <div class="stop-card">
+          <div class="stop-top">
+            <span class="stop-emoji">🦁</span>
+            <div class="stop-info">
+              <div class="stop-time">08:30 – 14:00</div>
+              <div class="stop-name">Fuji Safari Park</div>
+            </div>
+          </div>
+          <div class="stop-note">
+            <strong>10:00–11:00</strong> Safari Zone: lái xe riêng qua khu thú hoặc đi Jungle Bus đã đặt (cho sư tử, gấu, lạc đà ăn trực tiếp!)<br>
+            <strong>11:00–12:00</strong> Khu tương tác · chạm và cho thú nhỏ ăn<br>
+            <strong>12:00–12:45</strong> Ăn trưa trong Safari Park<br>
+            <strong>12:45–13:35</strong> Walking Safari hoặc khu thú nhỏ<br>
+            <strong>13:35–14:00</strong> Mua quà lưu niệm · lên xe
+          </div>
+          <div class="stop-tags">
+            <span class="tag tag-cash">💴 Mang tiền mặt cho phần cho thú ăn</span>
+            <span class="tag tag-info">Mở 09:00–16:30</span>
+          </div>
+          <a class="map-btn" href="https://maps.google.com/?cid=13390930882645942703" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Xem bản đồ
+          </a>
+        </div>
+      </div>
+
+      <div class="drive"><span class="drive-icon">🚗</span><div class="drive-line"></div>~30 phút</div>
+
+      <div class="stop">
+        <div class="stop-dot"></div>
+        <div class="stop-card">
+          <div class="stop-top">
+            <span class="stop-emoji">🛍️</span>
+            <div class="stop-info">
+              <div class="stop-time">14:30 – 15:15</div>
+              <div class="stop-name">Gotemba Premium Outlets — Hill Side</div>
+            </div>
+          </div>
+          <div class="stop-note">Ghé ngắn 30–45 phút · bé chơi playground ở khu Hill Side · người lớn nghỉ chân. Tùy giao thông, có thể bỏ qua nếu trễ.</div>
+          <div class="stop-tags">
+            <span class="tag tag-info">Mở 10:00–20:00</span>
+          </div>
+          <a class="map-btn" href="https://maps.google.com/?cid=5814346422745768836" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Xem bản đồ
+          </a>
+        </div>
+      </div>
+
+      <div class="drive"><span class="drive-icon">🚗</span><div class="drive-line"></div>~75 phút · Cao tốc Tōmei hướng Tokyo</div>
+
+      <div class="stop">
+        <div class="stop-dot"></div>
+        <div class="stop-card">
+          <div class="stop-top">
+            <span class="stop-emoji">🍱</span>
+            <div class="stop-info">
+              <div class="stop-time">16:30 – 17:30</div>
+              <div class="stop-name">Ebina SA — Ăn nhẹ & Nghỉ lần cuối</div>
+            </div>
+          </div>
+          <div class="stop-note">Vệ sinh, ăn nhẹ, nạp năng lượng lần cuối trước đoạn ngắn về nhà. Mở 24/7, nhiều đồ ăn và souvenirs.</div>
+          <div class="stop-tags">
+            <span class="tag tag-info">Mở 24/7</span>
+          </div>
+          <a class="map-btn" href="https://maps.google.com/?cid=10313570125232911023" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Xem bản đồ
+          </a>
+        </div>
+      </div>
+
+      <div class="drive"><span class="drive-icon">🚗</span><div class="drive-line"></div>~35 phút · Về nhà!</div>
+
+      <div class="stop">
+        <div class="stop-dot"></div>
+        <div class="stop-card">
+          <div class="stop-top">
+            <span class="stop-emoji">🏠</span>
+            <div class="stop-info">
+              <div class="stop-time">Từ 17:30</div>
+              <div class="stop-name">Về nhà — Maruyama, Funabashi ✨</div>
+            </div>
+          </div>
+          <div class="stop-note">Kết thúc chuyến đi 3 ngày đáng nhớ cùng cả gia đình!</div>
+          <a class="map-btn" href="https://maps.google.com/?q=Maruyama,Funabashi,Chiba" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Xem bản đồ
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <p>Lịch trình gia đình · 8 người lớn + 6 bé nhỏ · Di chuyển bằng ô tô<br>Thời gian lái xe ước tính — cộng thêm 20–30 phút dự phòng ngày lễ</p>
+  <span class="fuji-text">は こ ね · 富 士 山</span>
+</footer>
+
+<script>
+  const TABS = ['overview', 'd1', 'd2', 'd3'];
+  const COLORS = { overview: 'active-d1', d1: 'active-d1', d2: 'active-d2', d3: 'active-d3' };
+
+  function switchTab(id) {
+    // Hide all panels
+    TABS.forEach(t => {
+      const panel = document.getElementById('panel-' + t);
+      if (panel) panel.classList.remove('active');
+    });
+    // Remove active from all buttons
+    document.querySelectorAll('.tab-btn').forEach(b => {
+      b.classList.remove('active-d1', 'active-d2', 'active-d3');
+      b.setAttribute('aria-selected', 'false');
+    });
+    // Show target
+    const panel = document.getElementById('panel-' + id);
+    if (panel) panel.classList.add('active');
+    // Activate button
+    const btns = document.querySelectorAll('.tab-btn');
+    const idx = TABS.indexOf(id);
+    if (btns[idx]) {
+      btns[idx].classList.add(COLORS[id]);
+      btns[idx].setAttribute('aria-selected', 'true');
+    }
+    // Scroll to top of main
+    window.scrollTo({ top: document.querySelector('.tab-bar').offsetTop, behavior: 'smooth' });
+  }
+</script>
+</body>
+</html>
