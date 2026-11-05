@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trượt tuyết Tết 2027 – Fujimi Panorama & Hakuba Happo-one</title>
+<style>
+  :root{
+    --bg:#f3f6fa; --card:#ffffff; --ink:#1d2a3a; --muted:#5d6b7c;
+    --line:#e2e8f0; --blue:#2b6cb0; --blue-soft:#e8f1fb;
+    --amber:#b7791f; --amber-soft:#fdf5e6; --green:#2f855a; --green-soft:#e9f7ef;
+    --red:#c53030; --red-soft:#fdecec;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Noto Sans",Roboto,Arial,sans-serif;
+       background:var(--bg);color:var(--ink);line-height:1.6;font-size:16px}
+  a{color:var(--blue)}
+  header{
+    background:
+      linear-gradient(180deg,rgba(12,30,55,.35) 0%,rgba(12,30,55,.55) 60%,rgba(12,30,55,.75) 100%),
+      url("https://commons.wikimedia.org/wiki/Special:FilePath/HAKUBA47%E3%81%8B%E3%82%89%E3%81%BF%E3%81%9F%E7%99%BD%E9%A6%AC.jpg?width=1920") center 40%/cover no-repeat,
+      linear-gradient(135deg,#1e3a5f 0%,#2b6cb0 60%,#63a4e8 100%);
+    color:#fff;padding:72px 20px 80px;text-align:center;position:relative;overflow:hidden}
+  @media(min-width:640px){header{padding:110px 20px 120px}}
+  header h1{margin:0 0 8px;font-size:2rem;letter-spacing:.3px;text-shadow:0 2px 12px rgba(0,0,0,.45)}
+  header p{margin:0;opacity:.95;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}
+  .chip{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);padding:4px 12px;border-radius:999px;font-size:.88rem;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+  .hero-credit{position:absolute;right:10px;bottom:6px;font-size:.68rem;color:rgba(255,255,255,.75)}
+  .hero-credit a{color:rgba(255,255,255,.85)}
+  nav{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);overflow-x:auto;white-space:nowrap}
+  nav a{display:inline-block;padding:12px 14px;text-decoration:none;color:var(--muted);font-size:.92rem;font-weight:600}
+  nav a:hover{color:var(--blue)}
+  main{max-width:860px;margin:0 auto;padding:20px 16px 48px}
+  section{margin-bottom:28px}
+  h2{font-size:1.25rem;margin:0 0 12px;display:flex;align-items:center;gap:8px}
+  h3{font-size:1.05rem;margin:0 0 8px}
+  h4{margin:14px 0 6px;font-size:1rem}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:0 1px 2px rgba(0,0,0,.03)}
+  .grid{display:grid;gap:12px}
+  @media(min-width:640px){.grid.two{grid-template-columns:1fr 1fr}}
+  .family h3{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .tag{font-size:.75rem;font-weight:700;padding:2px 10px;border-radius:999px;white-space:nowrap}
+  .tag.car{background:var(--blue-soft);color:var(--blue)}
+  .tag.train{background:var(--amber-soft);color:var(--amber)}
+  .family p{margin:0;color:var(--muted)}
+  .facts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+  @media(min-width:640px){.facts{grid-template-columns:repeat(4,1fr)}}
+  .fact{background:var(--bg);border-radius:10px;padding:10px;text-align:center}
+  .fact b{display:block;font-size:1.15rem}
+  .fact span{font-size:.8rem;color:var(--muted)}
+  ul{margin:6px 0;padding-left:20px}
+  li{margin:3px 0}
+  .day{margin-bottom:16px}
+  .day-head{display:flex;align-items:baseline;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+  .day-num{background:var(--blue);color:#fff;border-radius:10px;padding:4px 10px;font-weight:700;font-size:.9rem}
+  .day-title{font-weight:700;font-size:1.08rem}
+  .tl{list-style:none;padding:0;margin:0;border-left:2px solid var(--line);margin-left:6px}
+  .tl li{position:relative;padding:0 0 12px 18px;margin:0}
+  .tl li::before{content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid var(--blue)}
+  .tl li.key::before{background:var(--blue)}
+  .time{font-weight:700;color:var(--blue);margin-right:6px}
+  .note{font-size:.9rem;color:var(--muted)}
+  .infobox{border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.93rem}
+  .infobox.green{background:var(--green-soft);border:1px solid #c6e9d4}
+  .infobox.blue{background:var(--blue-soft);border:1px solid #cfe1f6}
+  .alert{border-radius:12px;padding:12px 14px;margin-bottom:10px;font-size:.95rem}
+  .alert.warn{background:var(--amber-soft);border:1px solid #f3dcb0}
+  .alert.info{background:var(--blue-soft);border:1px solid #cfe1f6}
+  .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  table{width:100%;border-collapse:collapse;font-size:.93rem}
+  th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--muted);font-weight:600;font-size:.83rem;background:#f8fafc;white-space:nowrap}
+  table.wide{min-width:680px}
+  td.blank{color:#b6c0cc}
+  tr.fam td{background:#f8fafc;font-weight:700;color:var(--blue);font-size:.85rem}
+  .check label{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:1px dashed var(--line);cursor:pointer}
+  .check label:last-child{border-bottom:none}
+  .check input{margin-top:5px;width:18px;height:18px;flex-shrink:0}
+  .check input:checked + span{color:var(--muted);text-decoration:line-through}
+  .emergency{display:flex;flex-wrap:wrap;gap:10px}
+  .emergency div{flex:1 1 150px;background:var(--red-soft);border:1px solid #f5c9c9;border-radius:10px;padding:10px;text-align:center}
+  .emergency b{display:block;font-size:1.3rem;color:var(--red)}
+  /* Bản đồ */
+  .map{margin-top:14px;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#e9eef4;position:relative}
+  .map iframe{display:block;width:100%;height:320px;border:0}
+  .map-cap{font-size:.85rem;color:var(--muted);padding:8px 12px;background:#fff;border-top:1px solid var(--line)}
+  .btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+  .btn{display:inline-flex;align-items:center;gap:6px;background:var(--blue);color:#fff;text-decoration:none;font-size:.88rem;font-weight:600;padding:8px 14px;border-radius:999px}
+  .btn.alt{background:#fff;color:var(--blue);border:1px solid #bcd3ee}
+  .btn:hover{opacity:.9}
+  /* Ảnh địa điểm */
+  .places{display:grid;gap:12px;margin:14px 0 4px}
+  @media(min-width:640px){.places.two{grid-template-columns:1fr 1fr}.places.three{grid-template-columns:1fr 1fr 1fr}}
+  .place{margin:0;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#fff}
+  .place .ph{position:relative;aspect-ratio:16/10;background:linear-gradient(135deg,#9cc3ea,#2b6cb0)}
+  .place .ph::after{content:attr(data-fallback);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:1.05rem;text-align:center;padding:0 8px}
+  .place img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:1}
+  .place figcaption{padding:10px 12px}
+  .place figcaption b{display:block}
+  .place figcaption span{font-size:.85rem;color:var(--muted)}
+  .place .credit{display:block;font-size:.72rem;color:#8a97a8;margin-top:4px}
+  .place .credit a{color:#8a97a8}
+  .house-photo{margin:-16px -18px 14px;border-radius:14px 14px 0 0;overflow:hidden;aspect-ratio:16/8;background:linear-gradient(135deg,#d9b48f,#8a5a3b);position:relative}
+  .house-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:1}
+  .house-photo::after{content:"🏠 Nhà ở Matsumoto";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:1.1rem}
+  footer{text-align:center;color:var(--muted);font-size:.82rem;padding:0 16px 30px}
+  .sources a{word-break:break-all}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>⛷️ Trượt tuyết Tết 2027</h1>
+  <p>31/12/2026 → 02/01/2027 · Nhà ở Matsumoto · Fujimi Panorama &amp; Hakuba Happo-one</p>
+  <div class="chips">
+    <span class="chip">15 người · 4 gia đình</span>
+    <span class="chip">2 đêm</span>
+    <span class="chip">2 xe + tàu Azusa</span>
+  </div>
+  <div class="hero-credit">Ảnh: dãy núi Hakuba nhìn từ Hakuba47 · <a href="https://commons.wikimedia.org/wiki/File:HAKUBA47%E3%81%8B%E3%82%89%E3%81%BF%E3%81%9F%E7%99%BD%E9%A6%AC.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></div>
+</header>
+
+<nav>
+  <a href="#members">Thành viên</a>
+  <a href="#house">Nhà ở</a>
+  <a href="#plan">Lịch trình</a>
+  <a href="#rental">Thuê đồ</a>
+  <a href="#rooms">Chia phòng</a>
+  <a href="#notes">Lưu ý</a>
+  <a href="#checklist">Checklist</a>
+</nav>
+
+<main>
+
+  <section>
+    <div class="alert warn"><b>Tóm tắt:</b> Ngày 31/12 trượt ở <b>Fujimi Panorama</b> (nằm trên đường đi, cách nhà khoảng 45–60 phút) cho đỡ mệt. Ngày 1/1 đi <b>Happo-one</b>, cách nhà khoảng <b>1,5–2 tiếng</b> mỗi chiều, nên xuất phát <b>6:30</b>. Mọi giờ giấc là ước tính; giờ mở cửa mùa 2026-27 của các khu trượt chưa công bố, lịch dựa trên giờ mùa trước.</div>
+  </section>
+
+  <section id="members">
+    <h2>👨‍👩‍👧‍👦 Thành viên</h2>
+    <div class="grid two">
+      <div class="card family">
+        <h3>Nhà anh Nhân <span class="tag car">🚐 Xe 1 · 8 chỗ (thuê)</span></h3>
+        <p>Nhân, Hạnh, Kiều Trinh, Duyên</p>
+      </div>
+      <div class="card family">
+        <h3>Nhà Kha <span class="tag car">🚐 Xe 1 · 8 chỗ (thuê)</span></h3>
+        <p>Kha, Trinh, Nữ, Ryu</p>
+      </div>
+      <div class="card family">
+        <h3>Nhà anh Hoàng <span class="tag car">🚗 Xe 2 · xe riêng</span></h3>
+        <p>Hoàng, vợ, 2 bé</p>
+      </div>
+      <div class="card family">
+        <h3>Nhà Trinh <span class="tag train">🚄 Azusa đến Fujimi → đi chung xe</span></h3>
+        <p>Dũng, Trinh, Mo</p>
+      </div>
+    </div>
+    <p class="note">Đặt phòng Airbnb: 11 người lớn + 4 trẻ em.<br>
+    <b>Xe 1</b> (8 chỗ, thuê): Kha nhận xe rồi mang về nhà. Nhà anh Nhân lái xe riêng sang nhà Kha, để xe ở đó, rồi 2 nhà đi chung xe 8 chỗ, đủ 8 chỗ. · <b>Xe 2</b>: nhà anh Hoàng.</p>
+    <div class="alert info"><b>Nhà Trinh:</b> 31/12 đi tàu Azusa đến Fujimi Panorama, chiều <b>đi chung xe</b> với nhóm về nhà. 1/1 <b>đi chung xe</b> lên Happo và về. 2/1 <b>đi riêng</b> sang nhà bạn. Vì xe 8 chỗ đã đủ người, 3 người nhà Trinh sẽ ngồi xe nhà anh Hoàng, nên xe này cần <b>7 chỗ trở lên</b> (và ghế trẻ em nếu Mo dưới 6 tuổi).</div>
+  </section>
+
+  <section id="house">
+    <h2>🏠 Nhà ở</h2>
+    <div class="card">
+      <div class="house-photo"><img src="https://a0.muscache.com/im/pictures/hosting/Hosting-1736146539583905863/original/1f3a2a09-cd51-4108-9f2e-ecd66ca2096f.jpeg?im_w=1200" alt="Nhà nguyên căn Taisho Roman ở Matsumoto" loading="lazy" onerror="this.style.display='none'"></div>
+      <h3>Nhà nguyên căn phong cách Taisho Roman, Matsumoto</h3>
+      <p class="note" style="margin:0">Gần ga JR Murai (đi bộ khoảng 5 phút) · IC Shiojiri-kita khoảng 5 phút lái xe</p>
+      <div class="facts">
+        <div class="fact"><b>17</b><span>người tối đa</span></div>
+        <div class="fact"><b>4</b><span>phòng ngủ</span></div>
+        <div class="fact"><b>3</b><span>chỗ đậu xe</span></div>
+        <div class="fact"><b>1</b><span>phòng tắm (2 vòi sen)</span></div>
+      </div>
+      <table>
+        <tr><th>Check-in</th><td>16:00 – 21:00, tự check-in bằng khóa thông minh</td></tr>
+        <tr><th>Check-out</th><td><b>Trước 10:00</b>, trễ bị tính 1.000 yên/15 phút</td></tr>
+        <tr><th>Tiện nghi</th><td>Bếp, phòng ăn, máy giặt, máy sấy, Wi-Fi, TV, 3 toilet, đồ chơi cho trẻ 2–5 tuổi, ghế ăn em bé</td></tr>
+        <tr><th>Siêu thị</th><td>Sun Max (gần nhà) · AEON Town Matsumoto Murai (siêu thị The Big, thường mở 8:00–22:00)</td></tr>
+        <tr><th>Link</th><td><a href="https://www.airbnb.jp/rooms/1736146539583905863" target="_blank" rel="noopener">Xem trên Airbnb</a></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="plan">
+    <h2>🗓️ Lịch trình</h2>
+
+    <!-- NGÀY 31/12 -->
+    <div class="card day">
+      <div class="day-head"><span class="day-num">31/12</span><span class="day-title">Trượt tuyết gần đường đi: Fujimi Panorama → về nhà</span></div>
+      <ul class="tl">
+        <li><span class="time">trước 06:00</span>Nhà anh Nhân lái xe sang nhà Kha, đậu xe ở nhà Kha, chuyển đồ sang xe 8 chỗ (Kha đã nhận xe từ trước).</li>
+        <li class="key"><span class="time">06:00</span>2 xe xuất phát từ Funabashi, đi cao tốc Chuo → IC Suwa-minami → Fujimi Panorama. Dự kiến 3–3,5 tiếng vì ngày cuối năm có thể tắc.</li>
+        <li><span class="time">sáng</span>Nhà Trinh đi tàu <b>Azusa</b> có dừng ở <b>ga Fujimi</b> (khoảng 2 tiếng 15 phút từ Shinjuku), rồi đi <b>xe buýt miễn phí</b> khoảng 10 phút lên khu trượt. Mùa trước xe buýt chạy từ ga lúc 9:00 và 10:00.</li>
+        <li class="key"><span class="time">~09:30</span>Đến Fujimi Panorama, thuê đồ ngay tại khu trượt, mua vé.</li>
+        <li><span class="time">09:30–14:30</span>Trượt tuyết. Các bé chơi ở <b>khu vui chơi trẻ em</b>: xe trượt, thang cuốn tuyết, phao trượt, bạt nhún, có phòng nghỉ trong nhà. Mùa trước vé 1.500 yên, trẻ từ 2 tuổi trở xuống miễn phí.</li>
+        <li><span class="time">15:00</span>Rời khu trượt, cả nhóm (kể cả nhà Trinh) đi chung xe về nhà, khoảng 45–60 phút (ước tính).</li>
+        <li><span class="time">~16:00</span>Mua đồ ăn cho cả 3 ngày ở AEON Town Matsumoto Murai hoặc Sun Max. <span class="note">(Kiểm tra giờ mở cửa ngày 31/12. Nhớ mua đồ ăn sáng sớm cho 1/1.)</span></li>
+        <li><span class="time">~17:00</span>Check-in, nghỉ ngơi, ăn soba đón năm mới 🍜. Ngủ sớm để sáng mai đi Happo.</li>
+      </ul>
+      <div class="infobox blue"><b>Fujimi Panorama (mùa trước):</b> mở cửa từ 20/12; cuối tuần và ngày lễ cáp treo chạy 8:00–16:30; cáp treo gondola 8:30–16:00. Có thuê đồ tại chỗ. <b>Phương án dự phòng</b> gần nhà hơn: <b>Asahi Prime</b> (khoảng 20 phút từ IC Shiojiri; mùa trước bộ ski thuê khoảng 4.100 yên người lớn, 3.600 yên trẻ em), nhưng ngày mở cửa phụ thuộc tuyết, cần gọi hỏi trước (0263-99-3700).</div>
+
+      <div class="places two">
+        <figure class="place">
+          <div class="ph" data-fallback="Fujimi Panorama"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/%E5%85%A5%E7%AC%A0%E5%B1%B1%E3%81%A8%E3%81%B5%E3%81%98%E3%81%B1%E3%82%89.jpg?width=1000" alt="Núi Nyukasa và khu trượt Fujimi Panorama" loading="lazy" onerror="this.style.display='none'"></div>
+          <figcaption><b>⛷️ Fujimi Panorama Resort</b><span>Khu trượt cạnh cao tốc Chuo, có khu vui chơi trẻ em và cáp treo gondola</span>
+            <span class="credit">Ảnh: <a href="https://commons.wikimedia.org/wiki/File:%E5%85%A5%E7%AC%A0%E5%B1%B1%E3%81%A8%E3%81%B5%E3%81%98%E3%81%B1%E3%82%89.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+        </figure>
+        <figure class="place">
+          <div class="ph" data-fallback="Nhà ở – Matsumoto"><img src="https://a0.muscache.com/im/pictures/hosting/Hosting-1736146539583905863/original/1f3a2a09-cd51-4108-9f2e-ecd66ca2096f.jpeg?im_w=720" alt="Nhà ở Matsumoto" loading="lazy" onerror="this.style.display='none'"></div>
+          <figcaption><b>🏠 Nhà ở (gần ga Murai)</b><span>Check-in 16:00–21:00 · khoảng 45–60 phút từ Fujimi Panorama</span>
+            <span class="credit">Ảnh: <a href="https://www.airbnb.jp/rooms/1736146539583905863" target="_blank" rel="noopener">Airbnb</a></span></figcaption>
+        </figure>
+      </div>
+
+      <div class="map">
+        <iframe src="https://maps.google.com/maps?saddr=Funabashi%2C+Chiba&amp;daddr=Fujimi+Panorama+Resort+to:Murai+Station%2C+Matsumoto&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ ngày 31/12"></iframe>
+        <div class="map-cap">🚗 Funabashi → Fujimi Panorama → Nhà ở (Matsumoto)</div>
+      </div>
+      <div class="btns">
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Funabashi%2C+Chiba&amp;destination=Murai+Station%2C+Matsumoto&amp;waypoints=Fujimi+Panorama+Resort&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Chỉ đường cho xe</a>
+        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=Shinjuku+Station&amp;destination=Fujimi+Station%2C+Nagano&amp;travelmode=transit" target="_blank" rel="noopener">🚄 Tàu Shinjuku → Fujimi (nhà Trinh)</a>
+      </div>
+    </div>
+
+    <!-- NGÀY 1/1 -->
+    <div class="card day">
+      <div class="day-head"><span class="day-num">01/01</span><span class="day-title">Năm mới: trượt tuyết cả ngày ở Hakuba Happo-one</span></div>
+      <ul class="tl">
+        <li><span class="time">06:00</span>Dậy, ăn sáng nhanh (chuẩn bị sẵn từ tối 31/12), mặc đồ trượt từ nhà.</li>
+        <li class="key"><span class="time">06:30</span><b>Xuất phát</b> từ nhà: IC Shiojiri-kita → IC Azumino → quốc lộ 148 → Happo. Trời còn tối, đường có thể đóng băng, lái chậm.</li>
+        <li><span class="time">~08:15</span>Đến Happo, đậu xe (khoảng 1.200 chỗ, miễn phí đến 1.000 yên). Cáp treo chạy từ <b>8:00</b> (giờ mùa trước).</li>
+        <li><span class="time">08:15–09:00</span>Nhận đồ thuê đã đặt trước, nhận vé cáp treo.</li>
+        <li><span class="time">09:00</span>Khu vui chơi trẻ em <b>Nakiyama Snow Land</b> mở cửa (mùa trước 9:00–16:00, vé 1.500 yên, có khu chơi trong nhà ở center house).</li>
+        <li><span class="time">09:00–15:30</span>Trượt tuyết, ăn trưa ở nhà hàng trên khu trượt. Người lớn thay phiên trông các bé.</li>
+        <li><span class="time">15:30</span>Trả đồ thuê. Cáp treo dừng khoảng <b>16:00</b>. Có thể tắm onsen <b>Happo no Yu</b> gần đó.</li>
+        <li class="key"><span class="time">16:00–16:30</span>Lái xe về nhà, khoảng 1,5–2 tiếng. Về đến nhà khoảng 18:00–18:30, nấu ăn tối chung.</li>
+      </ul>
+      <div class="infobox green"><b>Happo-one mùa 2026-27:</b> mùa cao điểm từ 19/12/2026 đến 22/3/2027. Vé 1 ngày người lớn <b>9.800 yên</b> (mua online cùng giá). Giá vé trẻ em mùa này chưa thấy công bố; mùa trước là 4.350 yên. Giờ chạy cáp treo mùa này chưa công bố; mùa trước là 8:00–16:00, không có trượt đêm.</div>
+
+      <div class="places">
+        <figure class="place">
+          <div class="ph" data-fallback="Hakuba Happo-one"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hakuba_Happo-one_Winter_Resort.JPG?width=1200" alt="Khu trượt tuyết Hakuba Happo-one" loading="lazy" onerror="this.style.display='none'"></div>
+          <figcaption><b>⛷️ Hakuba Happo-one</b><span>Khu trượt lớn nhất Hakuba, từng tổ chức Olympic 1998; có khu chơi tuyết Nakiyama cho người mới và trẻ em</span>
+            <span class="credit">Ảnh: <a href="https://commons.wikimedia.org/wiki/File:Hakuba_Happo-one_Winter_Resort.JPG" target="_blank" rel="noopener">Ski Mania / Wikimedia Commons</a></span></figcaption>
+        </figure>
+      </div>
+
+      <div class="map">
+        <iframe src="https://maps.google.com/maps?saddr=Murai+Station%2C+Matsumoto&amp;daddr=Hakuba+Happo-one+Snow+Resort&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ ngày 1/1"></iframe>
+        <div class="map-cap">🚗 Nhà ở → Hakuba Happo-one (đi và về cùng tuyến)</div>
+      </div>
+      <div class="btns">
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Murai+Station%2C+Matsumoto&amp;destination=Hakuba+Happo-one+Snow+Resort&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Nhà ở → Happo-one</a>
+        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=Hakuba+Happo-one+Snow+Resort&amp;destination=Murai+Station%2C+Matsumoto&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Happo-one → Nhà ở</a>
+      </div>
+    </div>
+
+    <!-- NGÀY 2/1 -->
+    <div class="card day">
+      <div class="day-head"><span class="day-num">02/01</span><span class="day-title">Tham quan Matsumoto rồi về</span></div>
+      <ul class="tl">
+        <li><span class="time">09:30</span>Dọn dẹp, phân loại rác, check-out <b>trước 10:00</b>.</li>
+        <li><span class="time">10:15</span>Đi lễ đầu năm ở <b>đền Yohashira (四柱神社)</b>, trung tâm Matsumoto.</li>
+        <li><span class="time">11:00</span><b>Lâu đài Matsumoto</b>. Một blog nói 1–3/1 mở cửa đặc biệt khoảng 10:00–15:30, <i>chưa xác nhận được</i>; nếu đóng cửa vẫn có thể ngắm và chụp ảnh từ bên ngoài.</li>
+        <li><span class="time">12:00</span>Dạo <b>phố cổ Nakamachi</b>, ăn trưa soba.</li>
+        <li class="key"><span class="time">trước 13:00</span>Các xe rời Matsumoto. Từ 2/1 cao tốc Chuo bắt đầu tắc hướng về Tokyo (đoạn hầm Kobotoke). Nhà Trinh đi riêng sang nhà bạn.</li>
+      </ul>
+
+      <div class="places three">
+        <figure class="place">
+          <div class="ph" data-fallback="Đền Yohashira"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Yohashira_Shrine_01.jpg?width=900" alt="Đền Yohashira, Matsumoto" loading="lazy" onerror="this.style.display='none'"></div>
+          <figcaption><b>⛩️ Đền Yohashira</b><span>Điểm đi lễ đầu năm ở trung tâm Matsumoto</span>
+            <span class="credit">Ảnh: <a href="https://commons.wikimedia.org/wiki/File:Yohashira_Shrine_01.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+        </figure>
+        <figure class="place">
+          <div class="ph" data-fallback="Lâu đài Matsumoto"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kasteel_van_Matsumoto_in_de_sneeuw%2C_-7_februari_2014_a.jpg?width=900" alt="Lâu đài Matsumoto trong tuyết" loading="lazy" onerror="this.style.display='none'"></div>
+          <figcaption><b>🏯 Lâu đài Matsumoto</b><span>Bảo vật quốc gia, lâu đài cổ đẹp nhất Nhật Bản</span>
+            <span class="credit">Ảnh: <a href="https://commons.wikimedia.org/wiki/File:Kasteel_van_Matsumoto_in_de_sneeuw,_-7_februari_2014_a.jpg" target="_blank" rel="noopener">Brian Jeffery Beggerly / Wikimedia Commons (CC BY 2.0)</a></span></figcaption>
+        </figure>
+        <figure class="place">
+          <div class="ph" data-fallback="Phố cổ Nakamachi"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nakamachi_street_Matsumoto_Nagano_pref_Japan02s3.jpg?width=900" alt="Phố cổ Nakamachi, Matsumoto" loading="lazy" onerror="this.style.display='none'"></div>
+          <figcaption><b>🏘️ Phố cổ Nakamachi</b><span>Dãy nhà kho tường trắng, quán cà phê, tiệm soba</span>
+            <span class="credit">Ảnh: <a href="https://commons.wikimedia.org/wiki/File:Nakamachi_street_Matsumoto_Nagano_pref_Japan02s3.jpg" target="_blank" rel="noopener">Wikimedia Commons (CC BY-SA 3.0)</a></span></figcaption>
+        </figure>
+      </div>
+
+      <div class="map">
+        <iframe src="https://maps.google.com/maps?saddr=Murai+Station%2C+Matsumoto&amp;daddr=Yohashira+Shrine%2C+Matsumoto+to:Matsumoto+Castle+to:Funabashi%2C+Chiba&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ ngày 2/1"></iframe>
+        <div class="map-cap">🚗 Nhà ở → Đền Yohashira → Lâu đài Matsumoto (phố Nakamachi ngay cạnh) → Funabashi</div>
+      </div>
+      <div class="btns">
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Murai+Station%2C+Matsumoto&amp;destination=Funabashi%2C+Chiba&amp;waypoints=Yohashira+Shrine%2C+Matsumoto%7CMatsumoto+Castle&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Chỉ đường ngày 2/1</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="rental">
+    <h2>🎿 Thuê đồ trượt tuyết (chưa chốt)</h2>
+    <div class="card">
+      <h3>Những gì thuê được và những gì phải tự mang</h3>
+      <div class="grid two">
+        <div class="infobox green" style="margin:0">
+          <b>✅ Thường cho thuê</b>
+          <ul>
+            <li>Ván snowboard hoặc ski + gậy</li>
+            <li>Giày trượt (boots)</li>
+            <li>Áo khoác trượt tuyết</li>
+            <li>Quần trượt tuyết</li>
+            <li>Mũ bảo hiểm</li>
+            <li>Một số tiệm: bảo vệ cổ tay, giày đi tuyết</li>
+          </ul>
+        </div>
+        <div class="infobox blue" style="margin:0">
+          <b>🎒 Tự mang hoặc mua trước</b>
+          <ul>
+            <li><b>Kính trượt tuyết</b> (goggles)</li>
+            <li><b>Găng tay</b> chống nước</li>
+            <li>Mũ len, khăn ống che cổ</li>
+            <li>Áo giữ nhiệt, tất dày (tất cao cổ)</li>
+          </ul>
+          <span class="note">Rhythm ghi rõ không cho thuê kính và găng tay vì lý do vệ sinh; bảng giá của SPICY cũng không có hai món này (tiệm có bán). Riêng <b>Woody</b> có cho thuê cả kính và găng.</span>
+        </div>
+      </div>
+
+      <h4>So sánh các tiệm ở Happo-one (ngày 1/1) · giá thuê 1 ngày</h4>
+      <div class="table-wrap">
+        <table class="wide" style="min-width:920px">
+          <tr><th>Tiệm</th><th>Ván / ski<br>+ giày</th><th>Áo khoác</th><th>Quần</th><th>Mũ bảo hiểm</th><th>Kính</th><th>Găng tay</th><th>Đồ khác</th><th>Đặt trước · ghi chú</th></tr>
+          <tr>
+            <td><b>SPICY</b><br><span class="note">Happo Lounge, ngay trước gondola</span></td>
+            <td>NL <b>9.000</b><br>TE (&lt;13) <b>5.000</b></td>
+            <td>NL 3.300<br>TE 2.000</td>
+            <td>NL 3.300<br>TE 2.000</td>
+            <td>2.000</td>
+            <td>✗ <span class="note">(có bán)</span></td>
+            <td>✗ <span class="note">(có bán)</span></td>
+            <td>Bộ áo + quần: NL 6.600 / TE 4.000<br>Gậy: 1.300<br>Chỉ giày: NL 4.000 / TE 2.500</td>
+            <td><a href="https://webrental.spicy.co.jp/en/" target="_blank" rel="noopener">Đặt online</a>. Có giá online và giá cho người sống ở Nhật (thường rẻ hơn). Bán vé cáp treo tại tiệm.</td>
+          </tr>
+          <tr>
+            <td><b>Rhythm</b><br><span class="note">Happo, khoảng 5 phút đi bộ đến gondola</span></td>
+            <td>NL <b>9.500</b><br>TE (7–13) <b>7.200</b></td>
+            <td>NL 3.800<br>TE 2.600</td>
+            <td>NL 3.800<br>TE 2.600</td>
+            <td>3.300</td>
+            <td>✗ không cho thuê</td>
+            <td>✗ không cho thuê</td>
+            <td>Gậy: 1.150<br>Bảo vệ cổ tay: 1.150<br>Giày đi tuyết: 2.600</td>
+            <td><a href="https://rhythmjapan.com/winter-rentals-services" target="_blank" rel="noopener">Đặt online</a> trước 48 giờ giảm 10%. Hủy miễn phí đến 48 giờ trước. Thuê từ 3 tuổi.</td>
+          </tr>
+          <tr>
+            <td><b>Woody</b> <span class="tag car" style="font-size:.68rem">trọn bộ</span><br><span class="note">3 cửa hàng ở Happo, có 1 cửa hàng cạnh khu trẻ em Nakiyama</span></td>
+            <td class="blank">Chưa có giá</td>
+            <td>Có</td>
+            <td>Có</td>
+            <td>Có</td>
+            <td><b>Có</b></td>
+            <td><b>Có</b></td>
+            <td>Giày trẻ em từ cỡ 14,5 cm; thuê từ 2 tuổi</td>
+            <td>Cho thuê <b>trọn bộ "tay không"</b>: ván/ski, áo, quần, mũ bảo hiểm, găng tay, kính. Trẻ lần đầu trượt được thử miễn phí 1 giờ. <span class="note">Thông tin từ trang đặt mùa 2022-23, cần hỏi lại.</span></td>
+          </tr>
+          <tr>
+            <td><b>Central Snowsports</b><br><span class="note">Trung tâm Happo, gần gondola</span></td>
+            <td class="blank">Chưa có giá</td>
+            <td>Có</td>
+            <td>Có</td>
+            <td>Có</td>
+            <td class="blank">Chưa rõ</td>
+            <td class="blank">Chưa rõ</td>
+            <td class="blank">—</td>
+            <td>Có đặt online. Thêm cửa hàng ở Wadano và Echoland.</td>
+          </tr>
+          <tr>
+            <td><b>Quầy thuê của khu trượt Happo</b></td>
+            <td>Có <span class="note">(chưa rõ giá)</span></td>
+            <td class="blank">Chưa rõ</td>
+            <td class="blank">Chưa rõ</td>
+            <td class="blank">Chưa rõ</td>
+            <td class="blank">Chưa rõ</td>
+            <td class="blank">Chưa rõ</td>
+            <td class="blank">—</td>
+            <td>Không cần đặt, nhưng dịp Tết có thể hết cỡ.</td>
+          </tr>
+        </table>
+      </div>
+      <div class="infobox green"><b>Tính trọn 1 set</b> (ván/ski + giày + áo + quần + mũ bảo hiểm, 1 ngày, giá thường):<br>
+      • <b>SPICY:</b> người lớn khoảng <b>17.600 yên</b> · trẻ dưới 13 tuổi khoảng <b>11.000 yên</b><br>
+      • <b>Rhythm:</b> người lớn khoảng <b>20.400 yên</b> · trẻ 7–13 tuổi khoảng <b>15.700 yên</b> (đặt online trước 48 giờ giảm 10%)<br>
+      Hai tiệm này không cho thuê kính và găng tay. <b>Woody</b> có gói trọn bộ kể cả kính và găng nhưng chưa có giá.</div>
+      <p class="note">Đơn vị: yên. NL = người lớn, TE = trẻ em. Giá thường mùa 2026-27 lấy từ trang của SPICY và Rhythm.<br>
+      <b>Ngày 31/12 ở Fujimi Panorama:</b> thuê ngay tại khu trượt; mùa trước bộ ski người lớn 6.000 yên, các món khác chưa rõ giá.</p>
+
+      <h4>Danh sách đồ cần thuê của từng người (điền dần)</h4>
+      <div class="table-wrap">
+        <table class="wide" style="min-width:900px">
+          <tr><th>Tên</th><th>Lớn / bé</th><th>Ski / Snowboard / Chơi tuyết</th><th>Chiều cao</th><th>Cỡ giày (cm)</th><th>Thuê áo</th><th>Thuê quần</th><th>Thuê mũ BH</th><th>Đã có kính</th><th>Đã có găng</th></tr>
+          <tr class="fam"><td colspan="10">Nhà anh Nhân</td></tr>
+          <tr><td>Nhân</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td></tr>
+          <tr><td>Hạnh</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td></tr>
+          <tr><td>Kiều Trinh</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td></tr>
+          <tr><td>Duyên</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td></tr>
+          <tr class="fam"><td colspan="10">Nhà anh Hoàng</td></tr>
+          <tr><td>Hoàng</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td></tr>
+          <tr><td>Vợ anh Hoàng</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td></tr>
+          <tr><td>Bé 1</td><td>Bé</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td></tr>
+          <tr><td>Bé 2</td><td>Bé</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td></tr>
+          <tr class="fam"><td colspan="10">Nhà Trinh</td></tr>
+          <tr><td>Dũng</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td></tr>
+          <tr><td>Trinh</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td></tr>
+          <tr><td>Mo</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td></tr>
+          <tr class="fam"><td colspan="10">Nhà Kha</td></tr>
+          <tr><td>Kha</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td></tr>
+          <tr><td>Trinh</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td></tr>
+          <tr><td>Nữ</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td></tr>
+          <tr><td>Ryu</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td><td class="blank">—</td></tr>
+        </table>
+      </div>
+      <p class="note">Tiệm thuê đồ thường hỏi chiều cao, cân nặng, cỡ giày và trình độ. Ai chỉ chơi tuyết (không trượt) thì không cần thuê ván, chỉ cần áo quần chống nước, găng và giày đi tuyết.</p>
+    </div>
+  </section>
+
+  <section id="rooms">
+    <h2>🛏️ Gợi ý chia phòng</h2>
+    <div class="card">
+      <table>
+        <tr><th>Phòng</th><th>Giường</th><th>Ai ở</th></tr>
+        <tr><td><b>Phòng 1</b></td><td>7 bộ futon</td><td>Nhà anh Nhân (4) + Nhà Trinh (3)</td></tr>
+        <tr><td><b>Phòng 2</b></td><td>3 bộ futon</td><td>Dự phòng / chỗ ngủ trưa cho các bé</td></tr>
+        <tr><td><b>Phòng 3</b></td><td>1 giường đôi + 1 futon</td><td>Nhà Kha (4)</td></tr>
+        <tr><td><b>Phòng 4</b></td><td>1 giường đôi + 1 sofa bed</td><td>Nhà anh Hoàng (4)</td></tr>
+      </table>
+      <p class="note">Nhà chỉ có 1 phòng tắm (2 vòi sen), nên chia giờ tắm: trẻ em tắm trước, người lớn tắm sau. Tối 31/12 nên tắm sớm vì sáng 1/1 phải dậy lúc 6:00.</p>
+    </div>
+  </section>
+
+  <section id="notes">
+    <h2>⚠️ Lưu ý</h2>
+    <div class="card">
+      <ul>
+        <li><b>Lốp tuyết:</b> tất cả các xe bắt buộc dùng lốp tuyết (studless), chủ nhà cũng yêu cầu. Xe thuê ở khu Tokyo thường không lắp sẵn, nên khi đặt xe 8 chỗ phải chọn thêm lốp tuyết (スタッドレスタイヤ) và hỏi có xích không.</li>
+        <li><b>Ghế trẻ em:</b> ở Nhật, trẻ dưới 6 tuổi bắt buộc ngồi ghế trẻ em. Nhớ thuê kèm ghế cho các bé.</li>
+        <li><b>Hành lý xe 8 chỗ:</b> 8 người cùng đồ đạc thì cốp sẽ chật. Nên thuê đồ trượt tại chỗ thay vì mang theo.</li>
+        <li><b>Sáng 1/1:</b> đường đến Hakuba lúc sáng sớm có thể đóng băng. Kiểm tra thông tin đường và thời tiết tối 31/12. Nếu tuyết quá lớn, cân nhắc trượt lại ở khu gần nhà.</li>
+        <li><b>Bãi đậu xe ở Happo:</b> nhanh đầy dịp Tết, càng đến sớm càng tốt.</li>
+        <li><b>Vé tàu:</b> đặt sớm vé ghế chỉ định Azusa ngày 31/12 (chuyến có dừng ở ga Fujimi) cho nhà Trinh.</li>
+        <li><b>Nội quy nhà:</b> không làm ồn, nhất là buổi tối và sáng sớm; không hút thuốc trong nhà; dùng thêm chăn đệm ngoài số người đã đặt sẽ bị tính phí.</li>
+        <li><b>Ngày Tết:</b> từ 1/1 nhiều cửa hàng và quán ăn nghỉ, nên mua đủ đồ ăn từ chiều 31/12.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="checklist">
+    <h2>✅ Checklist chuẩn bị</h2>
+    <div class="card check">
+      <label><input type="checkbox"><span>Đặt cọc / thanh toán Airbnb và xác nhận số người với chủ nhà</span></label>
+      <label><input type="checkbox"><span>Kha đặt và nhận xe 8 chỗ: lốp tuyết, ghế trẻ em, xích; nhận xe từ 30/12 rồi mang về nhà</span></label>
+      <label><input type="checkbox"><span>Chuẩn bị chỗ đậu xe cho xe nhà anh Nhân ở nhà Kha từ 31/12 đến 2/1; hẹn giờ nhà anh Nhân đến nhà Kha (khoảng 5:30)</span></label>
+      <label><input type="checkbox"><span>Kiểm tra lốp tuyết cho xe nhà anh Hoàng, mang xích</span></label>
+      <label><input type="checkbox"><span>Xác nhận xe nhà anh Hoàng có đủ 7 chỗ để chở thêm nhà Trinh ngày 31/12 và 1/1 (kèm ghế trẻ em nếu cần)</span></label>
+      <label><input type="checkbox"><span>Đặt vé Azusa ngày 31/12 (Shinjuku → ga Fujimi) cho nhà Trinh</span></label>
+      <label><input type="checkbox"><span>Điền bảng đồ cần thuê của từng người (chiều cao, cỡ giày, ski hay snowboard)</span></label>
+      <label><input type="checkbox"><span>Chọn tiệm và đặt trước đồ thuê ở Happo cho ngày 1/1</span></label>
+      <label><input type="checkbox"><span>Mua vé cáp treo Happo online (9.800 yên người lớn)</span></label>
+      <label><input type="checkbox"><span>Kiểm tra Fujimi Panorama đã mở cửa và giờ chạy ngày 31/12, giờ xe buýt từ ga Fujimi</span></label>
+      <label><input type="checkbox"><span>Mua hoặc mang <b>kính trượt tuyết và găng tay chống nước</b> cho mọi người (các tiệm thường không cho thuê)</span></label>
+      <label><input type="checkbox"><span>Đồ giữ ấm: áo giữ nhiệt, tất dày, mũ len, khăn ống, giày chống trượt</span></label>
+      <label><input type="checkbox"><span>Đồ cho bé: tã, sữa, đồ ăn vặt, thuốc hạ sốt, quần áo dự phòng</span></label>
+      <label><input type="checkbox"><span>Lên danh sách đi chợ cho 15 người (tối 31/12, sáng sớm và tối 1/1, sáng 2/1)</span></label>
+    </div>
+  </section>
+
+  <section>
+    <h2>🚑 Khẩn cấp</h2>
+    <div class="emergency">
+      <div><b>119</b>Cấp cứu / cứu hỏa</div>
+      <div><b>#7119</b>Tư vấn y tế (người lớn), tỉnh Nagano</div>
+      <div><b>#8000</b>Tư vấn y tế cho trẻ em</div>
+    </div>
+  </section>
+
+  <section class="sources">
+    <h2>🔗 Nguồn tham khảo</h2>
+    <div class="card note">
+      <ul>
+        <li><a href="https://www.airbnb.jp/rooms/1736146539583905863" target="_blank" rel="noopener">Airbnb: nhà nguyên căn Taisho Roman, Matsumoto</a></li>
+        <li><a href="https://weathernews.jp/ski/spot/34810/" target="_blank" rel="noopener">Weathernews: Hakuba Happo-one (giờ mở cửa, khu trẻ em mùa trước)</a></li>
+        <li><a href="https://tabiris.com/archives/happo2027/" target="_blank" rel="noopener">tabiris: giá vé Happo-one mùa 2026-27</a></li>
+        <li><a href="https://weathernews.jp/ski/spot/34836/" target="_blank" rel="noopener">Weathernews: Fujimi Panorama Resort</a></li>
+        <li><a href="https://rurubu.jp/andmore/spot/80020052" target="_blank" rel="noopener">Rurubu: Fujimi Panorama (xe buýt từ ga Fujimi)</a></li>
+        <li><a href="https://www.japan.travel/en/spot/1364/" target="_blank" rel="noopener">JNTO: Fujimi Panorama Resort</a></li>
+        <li><a href="https://www.tour.ne.jp/j_special/ski/232/" target="_blank" rel="noopener">Travelko: Asahi Prime (dự phòng)</a></li>
+        <li><a href="https://spicy.co.jp/en/winter/" target="_blank" rel="noopener">SPICY: giá thuê đồ mùa 2026-27</a></li>
+        <li><a href="https://www.powderhounds.com/japan/honshu/hakuba/facilities-services.aspx" target="_blank" rel="noopener">Powderhounds: các tiệm thuê đồ ở Hakuba</a></li>
+        <li><a href="https://rhythmjapan.com/winter-rentals-services" target="_blank" rel="noopener">Rhythm Japan: giá thuê đồ mùa 2026-27</a></li>
+        <li><a href="https://en.activityjapan.com/publish/plan/44700" target="_blank" rel="noopener">Activity Japan: gói thuê trọn bộ của Woody (Happo)</a></li>
+        <li><a href="https://tabiris.com/?p=67169" target="_blank" rel="noopener">tabiris: tàu Azusa / Hakuba Express</a></li>
+        <li><a href="https://www.nap-camp.com/mag/100156" target="_blank" rel="noopener">nap-camp: đi Happo-one bằng xe</a></li>
+        <li><a href="https://banzokubiology.com/?p=12368" target="_blank" rel="noopener">banzokubiology: lâu đài Matsumoto dịp năm mới</a></li>
+        <li>Ảnh địa điểm: Wikimedia Commons (tác giả và giấy phép ghi dưới từng ảnh) và Airbnb</li>
+        <li>Bản đồ: Google Maps. Nhà ở được đánh dấu ở ga Murai, cách nhà khoảng 300 m.</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>Lịch trình tham khảo · giờ giấc là ước tính · cập nhật 11/2026</footer>
+
+</body>
+</html>
