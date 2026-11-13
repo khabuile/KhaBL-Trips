@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kyoto – Osaka – Nara mùa lá đỏ 2026</title>
+<style>
+  :root{
+    --bg:#f8f4f0; --card:#ffffff; --ink:#2a211c; --muted:#6d625a;
+    --line:#ebe2da; --red:#b23a1e; --red-soft:#fbede8;
+    --amber:#a8650f; --amber-soft:#fdf4e4; --green:#2f7a52; --green-soft:#eaf6ef;
+    --blue:#2b6cb0; --blue-soft:#e8f1fb; --sos:#c53030; --sos-soft:#fdecec;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Noto Sans",Roboto,Arial,sans-serif;
+       background:var(--bg);color:var(--ink);line-height:1.6;font-size:16px}
+  a{color:var(--red)}
+  header{
+    background:
+      linear-gradient(180deg,rgba(45,15,5,.30) 0%,rgba(45,15,5,.55) 60%,rgba(45,15,5,.78) 100%),
+      url("https://commons.wikimedia.org/wiki/Special:FilePath/Togetsukyo_bridge_(2699796889).jpg?width=1920") center 55%/cover no-repeat,
+      linear-gradient(135deg,#5a1a0c 0%,#b23a1e 55%,#e39a3b 100%);
+    color:#fff;padding:72px 20px 80px;text-align:center;position:relative;overflow:hidden}
+  @media(min-width:640px){header{padding:110px 20px 120px}}
+  header h1{margin:0 0 8px;font-size:2rem;letter-spacing:.3px;text-shadow:0 2px 12px rgba(0,0,0,.45)}
+  header p{margin:0;opacity:.95;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}
+  .chip{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);padding:4px 12px;border-radius:999px;font-size:.88rem;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+  .hero-credit{position:absolute;right:10px;bottom:6px;font-size:.68rem;color:rgba(255,255,255,.75)}
+  .hero-credit a{color:rgba(255,255,255,.85)}
+  nav{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);overflow-x:auto;white-space:nowrap}
+  nav a{display:inline-block;padding:12px 14px;text-decoration:none;color:var(--muted);font-size:.92rem;font-weight:600}
+  nav a:hover{color:var(--red)}
+  main{max-width:860px;margin:0 auto;padding:20px 16px 48px}
+  section{margin-bottom:28px;scroll-margin-top:52px}
+  h2{font-size:1.25rem;margin:0 0 12px;display:flex;align-items:center;gap:8px}
+  h3{font-size:1.05rem;margin:0 0 8px}
+  h4{margin:14px 0 6px;font-size:1rem}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:0 1px 2px rgba(0,0,0,.03)}
+  .grid{display:grid;gap:12px}
+  @media(min-width:640px){.grid.two{grid-template-columns:1fr 1fr}.grid.three{grid-template-columns:1fr 1fr 1fr}}
+  .family h3{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .tag{font-size:.75rem;font-weight:700;padding:2px 10px;border-radius:999px;white-space:nowrap;background:var(--red-soft);color:var(--red)}
+  .tag.green{background:var(--green-soft);color:var(--green)}
+  .tag.amber{background:var(--amber-soft);color:var(--amber)}
+  .family p{margin:0;color:var(--muted)}
+  .facts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+  @media(min-width:640px){.facts{grid-template-columns:repeat(4,1fr)}}
+  .fact{background:var(--bg);border-radius:10px;padding:10px;text-align:center}
+  .fact b{display:block;font-size:1.15rem}
+  .fact span{font-size:.8rem;color:var(--muted)}
+  ul{margin:6px 0;padding-left:20px}
+  li{margin:3px 0}
+  .overview{display:grid;gap:10px}
+  @media(min-width:640px){.overview{grid-template-columns:repeat(4,1fr)}}
+  .ov{display:block;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
+  .ov:hover{border-color:var(--red)}
+  .ov b{display:block;color:var(--red);font-size:.85rem}
+  .ov span{font-weight:700;display:block;margin:2px 0}
+  .ov small{color:var(--muted);font-size:.82rem;line-height:1.4;display:block}
+  .day{margin-bottom:16px}
+  .day-head{display:flex;align-items:baseline;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+  .day-num{background:var(--red);color:#fff;border-radius:10px;padding:4px 10px;font-weight:700;font-size:.9rem}
+  .day-title{font-weight:700;font-size:1.08rem}
+  .tl{list-style:none;padding:0;margin:0;border-left:2px solid var(--line);margin-left:6px}
+  .tl li{position:relative;padding:0 0 12px 18px;margin:0}
+  .tl li::before{content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid var(--red)}
+  .tl li.key::before{background:var(--red)}
+  .tl li.opt::before{border-style:dashed;border-color:var(--amber)}
+  .time{font-weight:700;color:var(--red);margin-right:6px}
+  .note{font-size:.9rem;color:var(--muted)}
+  .infobox{border-radius:10px;padding:10px 14px;margin:10px 0;font-size:.93rem}
+  .infobox.green{background:var(--green-soft);border:1px solid #c6e9d4}
+  .infobox.blue{background:var(--blue-soft);border:1px solid #cfe1f6}
+  .infobox.amber{background:var(--amber-soft);border:1px solid #f3dcb0}
+  .alert{border-radius:12px;padding:12px 14px;margin-bottom:10px;font-size:.95rem}
+  .alert.warn{background:var(--amber-soft);border:1px solid #f3dcb0}
+  .alert.info{background:var(--blue-soft);border:1px solid #cfe1f6}
+  .alert.red{background:var(--red-soft);border:1px solid #f1cfc4}
+  .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  table{width:100%;border-collapse:collapse;font-size:.93rem}
+  th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--muted);font-weight:600;font-size:.83rem;background:#fbf8f5;white-space:nowrap}
+  table.wide{min-width:680px}
+  .check label{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:1px dashed var(--line);cursor:pointer}
+  .check label:last-child{border-bottom:none}
+  .check input{margin-top:5px;width:18px;height:18px;flex-shrink:0;accent-color:var(--red)}
+  .check input:checked + span{color:var(--muted);text-decoration:line-through}
+  .emergency{display:flex;flex-wrap:wrap;gap:10px}
+  .emergency div{flex:1 1 150px;background:var(--sos-soft);border:1px solid #f5c9c9;border-radius:10px;padding:10px;text-align:center}
+  .emergency b{display:block;font-size:1.3rem;color:var(--sos)}
+  .map{margin-top:14px;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#efe9e3}
+  .map iframe{display:block;width:100%;height:320px;border:0}
+  .map-cap{font-size:.85rem;color:var(--muted);padding:8px 12px;background:#fff;border-top:1px solid var(--line)}
+  .btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+  .btn{display:inline-flex;align-items:center;gap:6px;background:var(--red);color:#fff;text-decoration:none;font-size:.88rem;font-weight:600;padding:8px 14px;border-radius:999px}
+  .btn.alt{background:#fff;color:var(--red);border:1px solid #e8c3b8}
+  .btn:hover{opacity:.9}
+  .places{display:grid;gap:12px;margin:14px 0 4px}
+  @media(min-width:640px){.places.two{grid-template-columns:1fr 1fr}.places.three{grid-template-columns:1fr 1fr 1fr}}
+  .place{margin:0;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#fff}
+  .place .ph{position:relative;aspect-ratio:16/10;background:linear-gradient(135deg,#e39a3b,#b23a1e)}
+  .place .ph::after{content:attr(data-fallback);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:1.05rem;text-align:center;padding:0 8px}
+  .place img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:1}
+  .place figcaption{padding:10px 12px}
+  .place figcaption b{display:block}
+  .place figcaption span{font-size:.85rem;color:var(--muted)}
+  .place .credit{display:block;font-size:.72rem;color:#9a8f86;margin-top:4px}
+  .place .credit a{color:#9a8f86}
+  .house-photo{margin:-16px -18px 14px;border-radius:14px 14px 0 0;overflow:hidden;aspect-ratio:16/8;background:linear-gradient(135deg,#d9b48f,#8a5a3b);position:relative}
+  .house-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:1}
+  .house-photo::after{content:"🏠 Tsudoi 集 – Nishinari, Osaka";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:1.1rem}
+  /* Phương án Osaka */
+  .opt-card{border:1px solid var(--line);border-radius:12px;padding:14px;background:#fff}
+  .opt-card.rec{border:2px solid var(--red)}
+  .opt-card h3{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+  .opt-card .tl{margin-top:8px}
+  .opt-card .tl li{padding-bottom:8px;font-size:.93rem}
+  footer{text-align:center;color:var(--muted);font-size:.82rem;padding:0 16px 30px}
+  .sources a{word-break:break-all}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🍁 Kyoto – Osaka – Nara mùa lá đỏ</h1>
+  <p>20/11 → 23/11/2026 · Nhà ở Nishinari (Osaka) · Kōmyō-ji, Kinkaku-ji, Arashiyama, Ginkaku-ji, Nanzen-ji, Nara</p>
+  <div class="chips">
+    <span class="chip">12 người · 3 gia đình</span>
+    <span class="chip">3 đêm</span>
+    <span class="chip">3 xe tự lái</span>
+  </div>
+  <div class="hero-credit">Ảnh: cầu Togetsukyo mùa thu · Kimon Berlin / <a href="https://commons.wikimedia.org/wiki/File:Togetsukyo_bridge_(2699796889).jpg" target="_blank" rel="noopener">Wikimedia Commons</a> (CC BY-SA 2.0)</div>
+</header>
+
+<nav>
+  <a href="#overview">Tổng quan</a>
+  <a href="#members">Thành viên</a>
+  <a href="#house">Nhà ở</a>
+  <a href="#plan">Lịch trình</a>
+  <a href="#osaka">Osaka tối 22/11</a>
+  <a href="#extra">Điểm thêm</a>
+  <a href="#fees">Vé &amp; giờ</a>
+  <a href="#rooms">Chia phòng</a>
+  <a href="#notes">Lưu ý</a>
+  <a href="#checklist">Checklist</a>
+</nav>
+
+<main>
+
+  <section id="overview">
+    <div class="alert warn"><b>Tóm tắt:</b> 21–23/11 là kỳ nghỉ 3 ngày (23/11 là ngày lễ Lao động), lại trùng mùa lá đỏ đẹp nhất ở Kyoto, nên đường và các điểm tham quan sẽ rất đông. Lịch dưới đây chia các điểm ở Kyoto thành <b>2 cụm</b>: ngày 21 đi <b>phía Tây</b> (Kōmyō-ji → Kinkaku-ji → Arashiyama), ngày 22 đi <b>phía Đông</b> (Ginkaku-ji → Đường triết học → Nanzen-ji) rồi về Osaka từ đầu giờ chiều. Mọi giờ giấc là ước tính.</div>
+    <div class="alert red"><b>3 việc cần làm ngay:</b> (1) Nhắn chủ nhà báo sẽ đến khoảng <b>01:00–01:30 sáng 21/11</b>, vì giờ check-in chỉ đến 00:00. (2) Hỏi chủ nhà chỗ đậu cho <b>3 xe</b> và xác nhận đoàn <b>12 người</b> (trang đặt phòng ghi tối đa 11). (3) Đặt trước bãi đậu xe ở Arashiyama cho chiều 21/11.</div>
+
+    <div class="overview">
+      <a class="ov" href="#d20"><b>Thứ Sáu 20/11</b><span>Funabashi → Osaka</span><small>18:00 xuất phát, khoảng 01:00–01:30 đến nhà</small></a>
+      <a class="ov" href="#d21"><b>Thứ Bảy 21/11</b><span>Kyoto phía Tây</span><small>Kōmyō-ji · Kinkaku-ji · Arashiyama</small></a>
+      <a class="ov" href="#d22"><b>Chủ Nhật 22/11</b><span>Kyoto phía Đông + Osaka</span><small>Ginkaku-ji · Đường triết học · Nanzen-ji · tối ở Osaka</small></a>
+      <a class="ov" href="#d23"><b>Thứ Hai 23/11 (lễ)</b><span>Nara → về nhà</span><small>Công viên Nara · Tōdai-ji · về Funabashi</small></a>
+    </div>
+
+    <div class="infobox green"><b>Lá đỏ năm 2026:</b> các trang dự báo cho thấy Arashiyama đẹp từ khoảng giữa đến cuối tháng 11, Eikandō và Nanzen-ji vào khung đẹp nhất từ khoảng 19–23/11. Như vậy 21–22/11 nằm trong hoặc sát thời điểm đẹp nhất. Nên xem lại dự báo trên tenki.jp vài ngày trước khi đi.</div>
+  </section>
+
+  <section id="members">
+    <h2>👨‍👩‍👧‍👦 Thành viên</h2>
+    <div class="grid three">
+      <div class="card family">
+        <h3>Nhà Kha <span class="tag">🚗 Xe 1</span></h3>
+        <p>Kha, Trinh, Nữ, Ryu</p>
+      </div>
+      <div class="card family">
+        <h3>Nhà anh Nhân <span class="tag">🚗 Xe 2</span></h3>
+        <p>Nhân, Hạnh, Duyên, Kiều Trinh</p>
+      </div>
+      <div class="card family">
+        <h3>Nhà Hải <span class="tag">🚗 Xe 3</span></h3>
+        <p>Hải, Trang, Shun, Shin</p>
+      </div>
+    </div>
+    <p class="note">Mỗi nhà đi xe riêng. Nên thống nhất điểm hẹn ở các trạm dừng (SA) trên đường đi và về, và lập nhóm chat chia sẻ vị trí giữa 3 xe.</p>
+  </section>
+
+  <section id="house">
+    <h2>🏠 Nhà ở</h2>
+    <div class="card">
+      <div class="house-photo"><img src="https://ak-d.tripcdn.com/images/1mc5y12000t5uhz7r48AB_R_960_660_R5_D.jpg" alt="Nhà Tsudoi, Nishinari, Osaka" loading="lazy" onerror="this.style.display='none'"></div>
+      <h3>Tsudoi 集 – nhà nguyên căn 5 phòng ngủ, 2 phòng tắm</h3>
+      <p class="note" style="margin:0">千本北2-8-7, quận Nishinari, Osaka (〒557-0053) · ga Nishi-Tengachaya (tuyến Nankai) khoảng 470 m · ga tàu điện ngầm Kishinosato khoảng 900 m · 7-Eleven đi bộ 5 phút</p>
+      <div class="facts">
+        <div class="fact"><b>5</b><span>phòng ngủ (mỗi phòng 1 giường đôi 1,4 m)</span></div>
+        <div class="fact"><b>+1</b><span>futon ở phòng khách</span></div>
+        <div class="fact"><b>2</b><span>phòng tắm có bồn</span></div>
+        <div class="fact"><b>11</b><span>khách tối đa theo trang đặt phòng</span></div>
+      </div>
+      <table>
+        <tr><th>Check-in</th><td>16:00 – 00:00, <b>tự check-in</b>. Chủ nhà yêu cầu báo trước giờ đến; hướng dẫn nhận chìa khóa gửi sau khi đặt.</td></tr>
+        <tr><th>Check-out</th><td><b>Trước 10:00</b></td></tr>
+        <tr><th>Giờ yên tĩnh</th><td>22:00 – 07:00 (đêm 20/11 đến lúc khoảng 1 giờ sáng nên nói nhỏ, đóng cửa xe nhẹ)</td></tr>
+        <tr><th>Đậu xe</th><td>Không có chỗ đậu trong nhà. Trang Trip.com ghi có bãi công cộng gần nhà khoảng <b>500 yên/ngày</b>, không đặt trước được. <b>Cần hỏi chủ nhà vị trí bãi cho 3 xe.</b></td></tr>
+        <tr><th>Tiện nghi</th><td>Bếp nhỏ (bếp nấu, lò vi sóng), máy giặt, máy sấy, Wi-Fi, máy lạnh, <b>máy chiếu màn hình lớn</b> ở phòng khách, toilet rửa tự động</td></tr>
+        <tr><th>Đặt cọc</th><td>15.000 yên (trả lại nếu không hư hỏng)</td></tr>
+        <tr><th>Gần nhà</th><td>Shinsekai / tháp Tsutenkaku khoảng 2,4 km · Spa World khoảng 2,2 km · Namba khoảng 30 phút</td></tr>
+        <tr><th>Link</th><td><a href="https://www.booking.com/hotel/jp/tsudoi-all-private-br-2-bldg-house.vi.html" target="_blank" rel="noopener">Xem trên Booking.com</a></td></tr>
+      </table>
+      <div class="map">
+        <iframe src="https://maps.google.com/maps?q=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ nhà ở"></iframe>
+        <div class="map-cap">📍 Tsudoi 集 – 千本北2-8-7, Nishinari, Osaka</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="plan">
+    <h2>🗓️ Lịch trình</h2>
+
+    <!-- NGÀY 20/11 -->
+    <div class="card day" id="d20">
+      <div class="day-head"><span class="day-num">20/11 · T6</span><span class="day-title">Lái xe đêm: Funabashi → Osaka</span></div>
+      <ul class="tl">
+        <li><span class="time">trước 18:00</span>Đổ đầy xăng, cắm thẻ ETC, chuẩn bị đồ ăn nhẹ và nước. Mua sẵn đồ ăn sáng cho sáng 21/11 (hoặc mua ở 7-Eleven gần nhà ở khi tới).</li>
+        <li class="key"><span class="time">18:00</span>3 xe xuất phát từ Funabashi. Tuyến tham khảo: Shuto → cao tốc Tomei / Shin-Tomei → Isewangan → Shin-Meishin hoặc Meihan → Osaka, khoảng <b>550 km</b>. Cứ theo navigation.</li>
+        <li><span class="time">18:00–20:00</span>Giờ tan tầm tối thứ Sáu ở Shuto, có thể chậm thêm 30–60 phút.</li>
+        <li><span class="time">~20:30</span>Nghỉ ăn tối ở một SA trên Shin-Tomei (ví dụ NEOPASA Suruga-wan Numazu hoặc Shizuoka). Hẹn 3 xe gặp nhau ở đây.</li>
+        <li><span class="time">~23:00</span>Nghỉ lần 2 (ví dụ Kariya Highway Oasis trên Isewangan), đổi tài xế nếu được.</li>
+        <li class="key"><span class="time">~01:00–01:30</span>Đến nhà. Đưa xe vào bãi chủ nhà chỉ, tự check-in, giữ yên lặng. Ngủ đến khoảng 08:00.</li>
+      </ul>
+      <div class="infobox amber"><b>Lái đêm khoảng 7 tiếng:</b> mỗi xe nên có 2 người lái thay phiên, nghỉ khoảng 2 tiếng một lần. Trẻ dưới 6 tuổi bắt buộc ngồi ghế trẻ em.</div>
+      <div class="map">
+        <iframe src="https://maps.google.com/maps?saddr=Funabashi%2C+Chiba&amp;daddr=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ ngày 20/11"></iframe>
+        <div class="map-cap">🚗 Funabashi → Nhà ở (Nishinari, Osaka)</div>
+      </div>
+      <div class="btns">
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Funabashi%2C+Chiba&amp;destination=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Chỉ đường Funabashi → nhà ở</a>
+      </div>
+    </div>
+
+    <!-- NGÀY 21/11 -->
+    <div class="card day" id="d21">
+      <div class="day-head"><span class="day-num">21/11 · T7</span><span class="day-title">Kyoto phía Tây: Kōmyō-ji → Kinkaku-ji → Arashiyama</span></div>
+      <div class="alert info" style="margin-top:0"><b>Vì sao đổi thứ tự?</b> Kōmyō-ji ở Nagaokakyō (phía Tây Nam Kyoto) nằm trên đường từ Osaka lên, nên đi đầu tiên. Sau đó lên Kinkaku-ji (phía Bắc), rồi kết thúc ở Arashiyama để ngắm hoàng hôn trên sông và về thẳng Osaka. Ginkaku-ji và Nanzen-ji ở phía Đông, cách xa, nên dời sang sáng 22/11.</div>
+      <ul class="tl">
+        <li><span class="time">08:00</span>Dậy, ăn sáng.</li>
+        <li class="key"><span class="time">09:00</span>Xuất phát đến <b>bãi đậu xe ga Nagaokakyō, cửa Tây</b> (市営長岡京駅西駐車場, hơn 380 chỗ), khoảng 1 tiếng. <b>Kōmyō-ji không có bãi đậu xe mùa lá đỏ</b> và cấm đỗ xung quanh.</li>
+        <li><span class="time">~10:00</span>Đậu xe ở <b>tầng 4–5</b>. Xuống <b>tầng 2</b> (trung tâm thông tin du lịch), đưa vé gửi xe để mua <b>vé vào chùa giảm giá 400 yên</b> (giá thường 1.000 yên).</li>
+        <li><span class="time">10:15</span>Đi xe buýt Hankyu số 6, 7, 20 hoặc 22 từ cửa Tây ga JR Nagaokakyō, xuống ở trạm <b>Asahigaoka Hōmu-mae</b> (旭が丘ホーム前), đi bộ 2 phút. Hoặc gọi 3 taxi.</li>
+        <li class="key"><span class="time">10:30–11:30</span><b>Kōmyō-ji (光明寺)</b>: theo tuyến tham quan khoảng 40 phút. Điểm chính là <b>"Momiji-sandō"</b>, con đường khoảng 200 m với 250 cây phong cổ tạo thành đường hầm lá đỏ. Trong chùa cấm ăn uống.</li>
+        <li><span class="time">11:45–12:45</span>Đi xe buýt về ga, ăn trưa quanh ga JR Nagaokakyō, rồi lấy xe.</li>
+        <li class="key"><span class="time">12:45</span>Lái xe đến <b>Kinkaku-ji</b> (khoảng 20 km, 45–60 phút vì tắc). Chùa có bãi đậu xe trả phí, mở 8:40–17:10.</li>
+        <li class="key"><span class="time">13:45–14:45</span><b>Kinkaku-ji – Chùa Vàng (金閣寺)</b>. Vé 500 yên người lớn, 300 yên học sinh tiểu học và THCS. Mở 9:00–17:00.</li>
+        <li class="opt"><span class="time">tùy chọn</span><b>Ryōan-ji</b> (vườn đá nổi tiếng, có trong tour tham khảo) cách Kinkaku-ji khoảng 1,5 km. Cần thêm khoảng 45 phút; nếu thêm thì đến Arashiyama muộn, không kịp vào Tenryū-ji.</li>
+        <li class="key"><span class="time">15:00</span>Lái xe đến <b>Arashiyama</b> (khoảng 25–40 phút). Đậu ở <b>bờ Nam sông, phía ga Hankyu Arashiyama</b> (bãi đã đặt trước). Bờ Bắc (đường Nagatsuji) tắc nặng vào cuối tuần mùa lá đỏ.</li>
+        <li class="key"><span class="time">15:30–17:30</span><b>Arashiyama (嵐山)</b>: đi bộ qua <b>cầu Togetsukyō</b> → <b>Tenryū-ji</b> (vào trước 16:50, vườn 500 yên) → ra cổng Bắc là đến <b>rừng tre Sagano</b> → quay lại cầu Togetsukyō ngắm hoàng hôn (mặt trời lặn khoảng 16:45–16:50).</li>
+        <li><span class="time">17:30</span>Ăn tối ở Arashiyama (nhiều quán đóng cửa sớm) hoặc về gần nhà ăn. Nhà có bếp và máy chiếu, có thể mua đồ về nấu và xem phim.</li>
+        <li><span class="time">~19:30</span>Về đến nhà (khoảng 55 km, 1–1,5 tiếng). Ngủ sớm vì sáng mai xuất phát 07:00.</li>
+      </ul>
+      <div class="infobox blue"><b>Đậu xe ở Arashiyama:</b> các bãi lớn ở đây gồm bãi thành phố (khoảng 105 chỗ, 1.040 yên), bãi Hankyu Arashiyama (khoảng 96 chỗ, 1.000 yên) và bãi Tenryū-ji (120 chỗ, 1.000 yên/ngày), đều theo thông tin năm 2025. Đến 15:00 ngày thứ Bảy, các bãi này rất dễ đã đầy. Nên <b>đặt trước 3 chỗ</b> qua akippa hoặc 特P ở phía Nam cầu Togetsukyō. <b>Phương án dự phòng:</b> đậu quanh ga Hankyu Katsura, đi tàu Hankyu 2 ga vào Arashiyama.</div>
+      <div class="infobox amber"><b>Lưu ý về "光明寺":</b> Lịch này hiểu là <b>Kōmyō-ji ở Nagaokakyō</b> (粟生光明寺), điểm ngắm lá đỏ nổi tiếng. Nếu ý là <b>Konkai Kōmyō-ji</b> (金戒光明寺, "Kurodani") ở Okazaki thì chùa này nằm giữa Ginkaku-ji và Nanzen-ji, nên chuyển sang sáng 22/11 (đi bộ khoảng 10 phút từ bãi đậu Okazaki).</div>
+
+      <div class="places three">
+        <figure class="place">
+          <div class="ph" data-fallback="Kōmyō-ji"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/131130_Komyoji_Nagaokakyo_Kyoto_pref_Japan06s3.jpg?width=900" alt="Chùa Kōmyō-ji, Nagaokakyō" loading="lazy" onerror="this.style.display='none'"></div>
+          <figcaption><b>🍁 Kōmyō-ji</b><span>Đường hầm lá đỏ "Momiji-sandō", mở cửa mùa lá đỏ 14/11–6/12/2026</span>
+            <span class="credit">Ảnh: 663highland / <a href="https://commons.wikimedia.org/wiki/File:131130_Komyoji_Nagaokakyo_Kyoto_pref_Japan06s3.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+        </figure>
+        <figure class="place">
+          <div class="ph" data-fallback="Kinkaku-ji"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kinkakuji_(Golden_Pavilion),_Kyoto,_Japan_-_34036736784.jpg?width=900" alt="Kinkaku-ji – Chùa Vàng" loading="lazy" onerror="this.style.display='none'"></div>
+          <figcaption><b>🏯 Kinkaku-ji</b><span>Chùa Vàng soi bóng xuống hồ</span>
+            <span class="credit">Ảnh: <a href="https://commons.wikimedia.org/wiki/File:Kinkakuji_(Golden_Pavilion),_Kyoto,_Japan_-_34036736784.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+        </figure>
+        <figure class="place">
+          <div class="ph" data-fallback="Rừng tre Sagano"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sagano_Bamboo_forest,_Arashiyama,_Kyoto.jpg?width=900" alt="Rừng tre Sagano, Arashiyama" loading="lazy" onerror="this.style.display='none'"></div>
+          <figcaption><b>🎋 Rừng tre Sagano</b><span>Ra từ cổng Bắc Tenryū-ji, mở cửa tự do</span>
+            <span class="credit">Ảnh: Casey Yee / <a href="https://commons.wikimedia.org/wiki/File:Sagano_Bamboo_forest,_Arashiyama,_Kyoto.jpg" target="_blank" rel="noopener">Wikimedia Commons</a> (CC BY-SA 2.0)</span></figcaption>
+        </figure>
+      </div>
+
+      <div class="map">
+        <iframe src="https://maps.google.com/maps?saddr=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;daddr=%E9%95%B7%E5%B2%A1%E4%BA%AC%E9%A7%85%E8%A5%BF%E9%A7%90%E8%BB%8A%E5%A0%B4+to:%E9%87%91%E9%96%A3%E5%AF%BA+to:%E9%98%AA%E6%80%A5%E5%B5%90%E5%B1%B1%E9%A7%85+to:%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ ngày 21/11"></iframe>
+        <div class="map-cap">🚗 Nhà ở → Bãi đậu ga Nagaokakyō (P&amp;R đi Kōmyō-ji) → Kinkaku-ji → Arashiyama (ga Hankyu) → Nhà ở</div>
+      </div>
+      <div class="btns">
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;destination=%E9%95%B7%E5%B2%A1%E4%BA%AC%E9%A7%85%E8%A5%BF%E9%A7%90%E8%BB%8A%E5%A0%B4&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Nhà → bãi ga Nagaokakyō</a>
+        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E9%95%B7%E5%B2%A1%E4%BA%AC%E9%A7%85%E8%A5%BF%E9%A7%90%E8%BB%8A%E5%A0%B4&amp;destination=%E9%87%91%E9%96%A3%E5%AF%BA&amp;travelmode=driving" target="_blank" rel="noopener">🧭 → Kinkaku-ji</a>
+        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E9%87%91%E9%96%A3%E5%AF%BA&amp;destination=%E9%98%AA%E6%80%A5%E5%B5%90%E5%B1%B1%E9%A7%85&amp;travelmode=driving" target="_blank" rel="noopener">🧭 → Arashiyama</a>
+        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E9%98%AA%E6%80%A5%E5%B5%90%E5%B1%B1%E9%A7%85&amp;destination=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Arashiyama → nhà</a>
+      </div>
+    </div>
+
+    <!-- NGÀY 22/11 -->
+    <div class="card day" id="d22">
+      <div class="day-head"><span class="day-num">22/11 · CN</span><span class="day-title">Kyoto phía Đông: Ginkaku-ji → Đường triết học → Nanzen-ji → về Osaka</span></div>
+      <div class="alert info" style="margin-top:0"><b>Cách đi:</b> 3 xe cùng đậu ở <b>bãi đậu xe công viên Okazaki</b> (khoảng 500 chỗ). Từ đó đi taxi hoặc xe buýt lên Ginkaku-ji, rồi <b>đi bộ xuống dốc</b> theo Đường triết học về Nanzen-ji. Nanzen-ji cách bãi đậu khoảng 10–15 phút đi bộ, nên không phải quay lại lấy xe giữa chừng. Bãi đậu của Nanzen-ji chỉ dành cho xe buýt du lịch vào mùa lá đỏ.</div>
+      <ul class="tl">
+        <li><span class="time">06:30</span>Dậy, ăn sáng nhanh hoặc mang theo ăn trên xe.</li>
+        <li class="key"><span class="time">07:00</span>Xuất phát đến <b>bãi đậu xe công viên Okazaki</b> (京都市岡崎公園駐車場), khoảng 1–1,25 tiếng qua IC Kyoto-Higashi. Bãi mở từ 7:30.</li>
+        <li><span class="time">08:15</span>Đậu xe. Đi taxi (3 xe, khoảng 10 phút) hoặc xe buýt thành phố số 5 từ trạm 岡崎公園 美術館・平安神宮前 đến trạm 銀閣寺道.</li>
+        <li class="key"><span class="time">08:40–09:40</span><b>Ginkaku-ji – Chùa Bạc (銀閣寺)</b>. Mở 8:30–17:00. Từ 4/2026 vé tăng lên <b>1.000 yên</b> người lớn, 500 yên học sinh tiểu học và THCS.</li>
+        <li class="key"><span class="time">09:40–11:00</span><b>Đường triết học (哲学の道)</b>, khoảng 2 km dọc con kênh. Có thể ghé chùa Hōnen-in (cổng mái tranh, miễn phí vào sân), đi ngang trước <b>Eikandō</b> (điểm lá đỏ nổi tiếng, vào cửa tính phí riêng).</li>
+        <li class="key"><span class="time">11:00–12:00</span><b>Nanzen-ji (南禅寺)</b>: sân chùa miễn phí. Leo cổng <b>Sanmon</b> ngắm toàn cảnh (600 yên), xem <b>cầu dẫn nước Suirokaku</b> bằng gạch đỏ (miễn phí), vườn Hōjō (600 yên). Mở 8:40–17:00.</li>
+        <li><span class="time">12:00–13:00</span>Ăn trưa. Món đặc trưng gần Nanzen-ji là <b>đậu phụ nấu yudōfu</b> (thường phải xếp hàng), hoặc ăn quanh khu Okazaki / đền Heian.</li>
+        <li><span class="time">13:00</span>Đi bộ về bãi Okazaki (khoảng 10–15 phút), đi ngang cổng torii đỏ khổng lồ của đền Heian.</li>
+        <li class="key"><span class="time">13:30</span>Lái xe về Osaka (khoảng 1–1,5 tiếng). Về nhà khoảng 15:00, đậu xe, nghỉ ngơi.</li>
+        <li class="key"><span class="time">15:30 → tối</span>Chơi ở Osaka. <a href="#osaka">Xem 3 phương án bên dưới ↓</a></li>
+      </ul>
+      <div class="infobox blue"><b>Bãi đậu xe công viên Okazaki:</b> theo số liệu năm 2024, ban ngày 300 yên/30 phút, tối đa 1.800 yên/24 giờ vào cuối tuần; mở 7:30–23:00. Giá có thể thay đổi vào mùa lá đỏ.</div>
+
+      <div class="places three">
+        <figure class="place">
+          <div class="ph" data-fallback="Ginkaku-ji"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ginkakuji_fall_2.jpg?width=900" alt="Ginkaku-ji mùa thu" loading="lazy" onerror="this.style.display='none'"></div>
+          <figcaption><b>🏯 Ginkaku-ji</b><span>Chùa Bạc, vườn cát trắng và rêu</span>
+            <span class="credit">Ảnh: <a href="https://commons.wikimedia.org/wiki/File:Ginkakuji_fall_2.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+        </figure>
+        <figure class="place">
+          <div class="ph" data-fallback="Đường triết học"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Philosophers_Walk,_Kyoto_(49073314072).jpg?width=900" alt="Đường triết học, Kyoto" loading="lazy" onerror="this.style.display='none'"></div>
+          <figcaption><b>🚶 Đường triết học</b><span>Khoảng 2 km dọc kênh, từ Ginkaku-ji xuống Nanzen-ji</span>
+            <span class="credit">Ảnh: <a href="https://commons.wikimedia.org/wiki/File:Philosophers_Walk,_Kyoto_(49073314072).jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+        </figure>
+        <figure class="place">
+          <div class="ph" data-fallback="Nanzen-ji"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sanmon_-_Nanzenji_-_IMG_5242.JPG?width=900" alt="Cổng Sanmon, Nanzen-ji" loading="lazy" onerror="this.style.display='none'"></div>
+          <figcaption><b>⛩️ Nanzen-ji</b><span>Cổng Sanmon và cầu dẫn nước Suirokaku</span>
+            <span class="credit">Ảnh: <a href="https://commons.wikimedia.org/wiki/File:Sanmon_-_Nanzenji_-_IMG_5242.JPG" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+        </figure>
+      </div>
+
+      <div class="map">
+        <iframe src="https://maps.google.com/maps?saddr=%E9%8A%80%E9%96%A3%E5%AF%BA&amp;daddr=%E5%93%B2%E5%AD%A6%E3%81%AE%E9%81%93+to:%E5%8D%97%E7%A6%85%E5%AF%BA+to:%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B2%A1%E5%B4%8E%E5%85%AC%E5%9C%92%E9%A7%90%E8%BB%8A%E5%A0%B4&amp;dirflg=w&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ đi bộ ngày 22/11"></iframe>
+        <div class="map-cap">🚶 Đi bộ: Ginkaku-ji → Đường triết học → Nanzen-ji → bãi đậu Okazaki</div>
+      </div>
+      <div class="btns">
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;destination=%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B2%A1%E5%B4%8E%E5%85%AC%E5%9C%92%E9%A7%90%E8%BB%8A%E5%A0%B4&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Nhà → bãi Okazaki</a>
+        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B2%A1%E5%B4%8E%E5%85%AC%E5%9C%92%E9%A7%90%E8%BB%8A%E5%A0%B4&amp;destination=%E9%8A%80%E9%96%A3%E5%AF%BA&amp;travelmode=transit" target="_blank" rel="noopener">🚌 Okazaki → Ginkaku-ji</a>
+        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B2%A1%E5%B4%8E%E5%85%AC%E5%9C%92%E9%A7%90%E8%BB%8A%E5%A0%B4&amp;destination=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Okazaki → nhà</a>
+      </div>
+    </div>
+
+    <!-- NGÀY 23/11 -->
+    <div class="card day" id="d23">
+      <div class="day-head"><span class="day-num">23/11 · T2 lễ</span><span class="day-title">Công viên Nara rồi lái xe về Funabashi</span></div>
+      <ul class="tl">
+        <li><span class="time">07:00</span>Dậy, dọn đồ, phân loại rác theo hướng dẫn của nhà, kiểm tra không để quên đồ.</li>
+        <li class="key"><span class="time">08:30–09:00</span>Check-out (hạn chót 10:00). Đi sớm để đến Nara trước khi đường vào công viên tắc.</li>
+        <li><span class="time">~10:00</span>Đến <b>bãi đậu xe Noborioji</b> (登大路自動車駐車場) cạnh trụ sở tỉnh Nara, khoảng 40 km, 1 tiếng. Ngày lễ: 1.000 yên khi vào, cộng 500 yên mỗi giờ, tối đa 2.000 yên/ngày.</li>
+        <li class="key"><span class="time">10:00–10:45</span><b>Công viên Nara</b>: cho hươu ăn bánh senbei. Hươu có thể húc hoặc cắn khi đòi bánh, người lớn nên đi cạnh các bé và cất bản đồ, túi giấy.</li>
+        <li class="key"><span class="time">10:45–12:00</span><b>Tōdai-ji</b>: cổng Nandaimon → điện Đại Phật (Daibutsuden). Tháng 11–3 mở 8:00–17:00. Vé 800 yên từ THCS trở lên, 400 yên học sinh tiểu học. Trẻ có thể thử chui qua lỗ ở chân cột trong điện.</li>
+        <li><span class="time">12:00–13:00</span>Ăn trưa quanh phố Higashimuki / Sanjō-dōri. Có thể xem quán mochi Nakatanidō giã bánh tốc độ cao.</li>
+        <li class="key"><span class="time">13:00 (muộn nhất 13:30)</span>Rời Nara về Funabashi, khoảng <b>500 km</b>. Chiều tối ngày cuối kỳ nghỉ, hướng về Tokyo thường tắc, nhất là đoạn cuối trên Tomei và Shin-Tomei.</li>
+        <li><span class="time">dọc đường</span>Nghỉ ở các SA lớn (ví dụ Kariya Highway Oasis, NEOPASA Shizuoka), ăn tối trên đường.</li>
+        <li class="key"><span class="time">~21:00–23:00</span>Về đến nhà, tùy mức độ tắc đường.</li>
+      </ul>
+      <div class="infobox amber"><b>Trước khi về:</b> tối 22/11 hoặc sáng 23/11, xem dự báo tắc đường trên trang JARTIC hoặc NEXCO. Nếu chiều về tắc nặng, có thể rời Nara sớm hơn (khoảng 12:00) và ăn trưa ở SA.</div>
+
+      <div class="places two">
+        <figure class="place">
+          <div class="ph" data-fallback="Hươu ở Nara"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sika_deer_in_Nara_05.jpg?width=900" alt="Hươu ở công viên Nara" loading="lazy" onerror="this.style.display='none'"></div>
+          <figcaption><b>🦌 Công viên Nara</b><span>Hơn nghìn con hươu thả tự do</span>
+            <span class="credit">Ảnh: Dariusz Jemielniak / <a href="https://commons.wikimedia.org/wiki/File:Sika_deer_in_Nara_05.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+        </figure>
+        <figure class="place">
+          <div class="ph" data-fallback="Tōdai-ji"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Daibutsu-den_in_Todaiji_Nara02bs3200.jpg?width=900" alt="Điện Đại Phật, Tōdai-ji" loading="lazy" onerror="this.style.display='none'"></div>
+          <figcaption><b>🛕 Tōdai-ji</b><span>Điện Đại Phật, một trong những công trình gỗ lớn nhất thế giới</span>
+            <span class="credit">Ảnh: 663highland / <a href="https://commons.wikimedia.org/wiki/File:Daibutsu-den_in_Todaiji_Nara02bs3200.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+        </figure>
+      </div>
+
+      <div class="map">
+        <iframe src="https://maps.google.com/maps?saddr=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;daddr=%E7%99%BB%E5%A4%A7%E8%B7%AF%E8%87%AA%E5%8B%95%E8%BB%8A%E9%A7%90%E8%BB%8A%E5%A0%B4+to:Funabashi%2C+Chiba&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ ngày 23/11"></iframe>
+        <div class="map-cap">🚗 Nhà ở → Bãi đậu Noborioji (Nara) → Funabashi</div>
+      </div>
+      <div class="btns">
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;destination=%E7%99%BB%E5%A4%A7%E8%B7%AF%E8%87%AA%E5%8B%95%E8%BB%8A%E9%A7%90%E8%BB%8A%E5%A0%B4&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Nhà → Nara</a>
+        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E7%99%BB%E5%A4%A7%E8%B7%AF%E8%87%AA%E5%8B%95%E8%BB%8A%E9%A7%90%E8%BB%8A%E5%A0%B4&amp;destination=Funabashi%2C+Chiba&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Nara → Funabashi</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="osaka">
+    <h2>🌃 Osaka chiều tối 22/11: 3 phương án</h2>
+    <div class="card">
+      <p class="note" style="margin-top:0">Về nhà khoảng 15:00. Nên để xe ở nhà và đi tàu điện ngầm: từ <b>ga Kishinosato</b> (khoảng 12 phút đi bộ) đi tuyến Yotsubashi 3 ga là đến <b>Namba</b>. Có thể chia nhóm: một nhóm đưa các bé đi phương án B, rồi cả đoàn gặp nhau ăn tối.</p>
+      <div class="grid">
+        <div class="opt-card rec">
+          <h3>A. Namba – Dōtonbori – đèn Midōsuji <span class="tag">Khuyên dùng</span></h3>
+          <p class="note" style="margin:0">Không cần lái xe; Osaka "đúng chất" nhất với đồ ăn đường phố và đèn neon.</p>
+          <ul class="tl">
+            <li><span class="time">15:45</span>Đi bộ ra ga Kishinosato → tuyến Yotsubashi đến Namba (3 ga).</li>
+            <li><span class="time">16:15</span><b>Đền Namba Yasaka</b>: sân khấu hình đầu sư tử khổng lồ, cách ga khoảng 10 phút đi bộ (tùy chọn).</li>
+            <li><span class="time">16:45</span><b>Dōtonbori</b>: biển hiệu Glico ở cầu Ebisu, dạo dọc sông, ăn vặt takoyaki. Có thể đi thuyền ngắm sông Dōtonbori (khoảng 20 phút).</li>
+            <li><span class="time">18:00</span>Ăn tối okonomiyaki hoặc kushikatsu. Đoàn 12 người nên <b>đặt bàn trước</b>.</li>
+            <li><span class="time">19:15</span>Dạo phố mua sắm <b>Shinsaibashi-suji</b> rồi ra đại lộ <b>Midōsuji</b> xem đèn trang trí. Năm 2026 đèn bật từ 3/11 đến 31/12, khoảng 17:00 đến 1:00 sáng.</li>
+            <li><span class="time">20:30</span>Về bằng tàu điện ngầm từ Namba hoặc Shinsaibashi.</li>
+          </ul>
+        </div>
+        <div class="grid two">
+          <div class="opt-card">
+            <h3>B. Thủy cung Kaiyūkan + vòng quay Tempōzan <span class="tag green">Cho trẻ em</span></h3>
+            <ul class="tl">
+              <li><span class="time">15:30</span>Lái xe khoảng 25–30 phút đến khu Tempōzan (có bãi đậu), hoặc đi tàu điện ngầm tuyến Chūō đến ga Ōsakakō.</li>
+              <li><span class="time">16:00–18:30</span><b>Thủy cung Kaiyūkan</b>: thường mở 10:00–20:00, vào trước 19:00. Vé người lớn từ 2.700 yên, tiểu học và THCS từ 1.400 yên, trẻ từ 3 tuổi từ 700 yên, giá thay đổi theo ngày. Chủ Nhật kỳ nghỉ nên <b>mua vé theo giờ online trước</b>.</li>
+              <li><span class="time">18:30</span><b>Vòng quay khổng lồ Tempōzan</b> ngắm đèn vịnh Osaka, ăn tối trong khu Tempōzan Marketplace.</li>
+            </ul>
+          </div>
+          <div class="opt-card">
+            <h3>C. Gần nhà: Abeno Harukas + Shinsekai <span class="tag amber">Nhẹ nhàng</span></h3>
+            <ul class="tl">
+              <li><span class="time">16:15</span>Đi taxi khoảng 10 phút đến <b>Abeno Harukas 300</b>, đài quan sát cao nhất Osaka. Mở 9:00–22:00, vé người lớn khoảng 2.200 yên. Đến lúc hoàng hôn (khoảng 16:50) để xem cả cảnh ngày lẫn đêm.</li>
+              <li><span class="time">18:00</span>Đi bộ khoảng 15 phút sang <b>Shinsekai</b>: tháp Tsūtenkaku, phố đèn kiểu Shōwa, ăn tối <b>kushikatsu</b> (xiên chiên).</li>
+              <li><span class="time">~20:00</span>Về nhà (khoảng 2,4 km, đi taxi). Hợp nếu cả đoàn đã mệt sau 2 ngày ở Kyoto.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="places three">
+        <figure class="place">
+          <div class="ph" data-fallback="Dōtonbori"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dotonbori,_Osaka,_at_night,_November_2016.jpg?width=900" alt="Dōtonbori về đêm" loading="lazy" onerror="this.style.display='none'"></div>
+          <figcaption><b>A · Dōtonbori</b><span>Biển hiệu neon và cầu Ebisu</span>
+            <span class="credit">Ảnh: Martin Falbisoner / <a href="https://commons.wikimedia.org/wiki/File:Dotonbori,_Osaka,_at_night,_November_2016.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+        </figure>
+        <figure class="place">
+          <div class="ph" data-fallback="Vòng quay Tempōzan"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tempozan_giant_wheel02s2048.jpg?width=900" alt="Vòng quay Tempōzan" loading="lazy" onerror="this.style.display='none'"></div>
+          <figcaption><b>B · Tempōzan</b><span>Vòng quay cạnh thủy cung Kaiyūkan</span>
+            <span class="credit">Ảnh: <a href="https://commons.wikimedia.org/wiki/File:Tempozan_giant_wheel02s2048.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+        </figure>
+        <figure class="place">
+          <div class="ph" data-fallback="Shinsekai"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tsutenkaku_and_Shinsekai_at_night_20110122.jpg?width=900" alt="Tsūtenkaku và Shinsekai về đêm" loading="lazy" onerror="this.style.display='none'"></div>
+          <figcaption><b>C · Shinsekai</b><span>Tháp Tsūtenkaku, gần nhà ở</span>
+            <span class="credit">Ảnh: <a href="https://commons.wikimedia.org/wiki/File:Tsutenkaku_and_Shinsekai_at_night_20110122.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
+        </figure>
+      </div>
+      <div class="btns">
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;destination=%E9%81%93%E9%A0%93%E5%A0%80&amp;travelmode=transit" target="_blank" rel="noopener">🚇 A · Nhà → Dōtonbori</a>
+        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;destination=%E6%B5%B7%E9%81%8A%E9%A4%A8&amp;travelmode=driving" target="_blank" rel="noopener">🧭 B · Nhà → Kaiyūkan</a>
+        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;destination=%E3%81%82%E3%81%B9%E3%81%AE%E3%83%8F%E3%83%AB%E3%82%AB%E3%82%B9&amp;travelmode=driving" target="_blank" rel="noopener">🧭 C · Nhà → Abeno Harukas</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="extra">
+    <h2>➕ Điểm thêm từ tour "3 Days in Kyoto"</h2>
+    <div class="card">
+      <div class="table-wrap">
+        <table>
+          <tr><th>Địa điểm</th><th>Xếp vào lịch?</th><th>Ghi chú</th></tr>
+          <tr><td>Rừng tre Arashiyama, Tenryū-ji, cầu Togetsukyō, Kinkaku-ji</td><td>✅ 21/11</td><td>Đã có trong lịch.</td></tr>
+          <tr><td>Đường triết học</td><td>✅ 22/11</td><td>Đã có, đi bộ từ Ginkaku-ji xuống Nanzen-ji.</td></tr>
+          <tr><td>Ryōan-ji (vườn đá)</td><td>➕ 21/11</td><td>Cạnh Kinkaku-ji, thêm khoảng 45 phút nhưng sẽ không kịp vào Tenryū-ji.</td></tr>
+          <tr><td>Fushimi Inari (cổng torii đỏ)</td><td>➕ 22/11</td><td>Nằm phía Nam Kyoto, trên đường về Osaka. Mở cửa 24/24, thêm khoảng 1–1,5 tiếng; về Osaka muộn hơn.</td></tr>
+          <tr><td>Kiyomizu-dera, dốc Ninenzaka / Sannenzaka, Gion</td><td>➕ thay cho Osaka chiều 22/11</td><td>Khu này rất khó đậu xe; nên đậu ở Okazaki rồi đi taxi. Một trang du lịch cho biết Kiyomizu-dera có chiếu sáng đêm 21–30/11/2026, chưa thấy thông báo chính thức.</td></tr>
+          <tr><td>Chợ Nishiki, tháp Kyoto</td><td>✗</td><td>Ở trung tâm thành phố, khó đậu 3 xe, ít liên quan đến lá đỏ.</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="fees">
+    <h2>🎫 Vé vào cửa, giờ mở cửa, đậu xe</h2>
+    <div class="card">
+      <div class="table-wrap">
+        <table class="wide">
+          <tr><th>Địa điểm</th><th>Người lớn</th><th>Trẻ em</th><th>Giờ mở cửa</th><th>Đậu xe</th></tr>
+          <tr><td><b>Kōmyō-ji</b></td><td>1.000 yên<br><span class="note">400 yên nếu gửi xe ở bãi ga Nagaokakyō</span></td><td>THCS–THPT 500 yên</td><td>Nhận khách 9:00–16:00 (14/11–6/12/2026)</td><td>Không có bãi, chỉ đi P&amp;R</td></tr>
+          <tr><td><b>Kinkaku-ji</b></td><td>500 yên</td><td>Tiểu học, THCS 300 yên</td><td>9:00–17:00</td><td>Có bãi trả phí: 400 yên giờ đầu, sau đó 200 yên/30 phút</td></tr>
+          <tr><td><b>Tenryū-ji</b> (vườn)</td><td>500 yên<br><span class="note">+300 yên vào các điện</span></td><td>—</td><td>8:30–17:00 (vào trước 16:50). 14–30/11 vườn mở sớm từ 7:30</td><td>120 chỗ, 1.000 yên/ngày</td></tr>
+          <tr><td><b>Rừng tre, cầu Togetsukyō</b></td><td>Miễn phí</td><td>Miễn phí</td><td>Tự do</td><td>Xem ô "Đậu xe ở Arashiyama"</td></tr>
+          <tr><td><b>Ginkaku-ji</b></td><td>1.000 yên</td><td>Tiểu học, THCS 500 yên</td><td>8:30–17:00</td><td>Không có bãi riêng, dùng bãi Okazaki</td></tr>
+          <tr><td><b>Nanzen-ji</b></td><td>Sân miễn phí; Sanmon 600 yên; vườn Hōjō 600 yên</td><td>Tiểu học, THCS 400 yên mỗi điểm</td><td>8:40–17:00</td><td>Mùa lá đỏ chỉ cho xe buýt; dùng bãi Okazaki</td></tr>
+          <tr><td><b>Tōdai-ji</b> (điện Đại Phật)</td><td>800 yên</td><td>Tiểu học 400 yên</td><td>8:00–17:00 (tháng 11–3)</td><td>Bãi Noborioji: ngày lễ tối đa 2.000 yên</td></tr>
+          <tr><td><b>Kaiyūkan</b> (PA B)</td><td>Từ 2.700 yên</td><td>Tiểu học, THCS từ 1.400 yên; từ 3 tuổi từ 700 yên</td><td>Thường 10:00–20:00</td><td>Bãi khu Tempōzan</td></tr>
+          <tr><td><b>Harukas 300</b> (PA C)</td><td>Khoảng 2.200 yên</td><td>—</td><td>9:00–22:00</td><td>Nên đi taxi</td></tr>
+        </table>
+      </div>
+      <p class="note">Giá và giờ lấy từ trang chính thức hoặc trang du lịch, có thể thay đổi; một số chùa chỉ nhận tiền mặt. Nên mang đủ tiền mặt và thẻ IC (Suica dùng được cho xe buýt Kyoto và tàu điện ngầm Osaka).</p>
+    </div>
+  </section>
+
+  <section id="rooms">
+    <h2>🛏️ Gợi ý chia phòng</h2>
+    <div class="card">
+      <table>
+        <tr><th>Phòng</th><th>Giường</th><th>Ai ở</th></tr>
+        <tr><td><b>Phòng 1, 2</b></td><td>Mỗi phòng 1 giường đôi 1,4 m</td><td>Nhà Kha (4)</td></tr>
+        <tr><td><b>Phòng 3, 4</b></td><td>Mỗi phòng 1 giường đôi 1,4 m</td><td>Nhà anh Nhân (4)</td></tr>
+        <tr><td><b>Phòng 5 + phòng khách</b></td><td>1 giường đôi + 1 futon</td><td>Nhà Hải (4)</td></tr>
+      </table>
+      <p class="note">Trang đặt phòng ghi tối đa <b>11 khách</b>, đoàn có 12 người, nên cần xác nhận với chủ nhà (trẻ nhỏ ngủ chung giường thường được chấp nhận nhưng phải hỏi trước). Nhà có 2 phòng tắm, chia giờ tắm: trẻ em tắm trước.</p>
+    </div>
+  </section>
+
+  <section id="notes">
+    <h2>⚠️ Lưu ý</h2>
+    <div class="card">
+      <ul>
+        <li><b>Đến muộn:</b> giờ check-in 16:00–00:00, đoàn đến khoảng 01:00–01:30. Phải nhắn chủ nhà trước qua Booking.com và chụp lại hướng dẫn tự check-in, mã khóa.</li>
+        <li><b>Đậu xe ở nhà:</b> không có chỗ trong nhà. Hỏi chủ nhà bãi gần nhất đủ cho 3 xe. Nên đặt trước trên akippa quanh khu 千本北 để không phải tìm chỗ lúc 1 giờ sáng.</li>
+        <li><b>Kōmyō-ji:</b> mùa lá đỏ không có bãi đậu, khu xung quanh cấm đỗ hoàn toàn. Bắt buộc gửi xe ở ga Nagaokakyō rồi đi xe buýt (được giảm giá vé).</li>
+        <li><b>Kyoto mùa lá đỏ + kỳ nghỉ 3 ngày:</b> đường quanh các điểm tham quan tắc từ trước trưa. Lịch đã chừa thời gian, nhưng nếu trễ thì bỏ bớt điểm tùy chọn.</li>
+        <li><b>Giữ liên lạc 3 xe:</b> chia sẻ vị trí trực tiếp; mỗi điểm đến chọn trước một điểm hẹn (ví dụ cổng chính).</li>
+        <li><b>Trẻ em:</b> trẻ dưới 6 tuổi phải ngồi ghế trẻ em. Mang xe đẩy gấp gọn; Đường triết học và Arashiyama đi bộ nhiều.</li>
+        <li><b>Thời tiết:</b> cuối tháng 11 ở Kyoto sáng sớm và tối lạnh, mang áo khoác, đi giày thoải mái.</li>
+        <li><b>Nhà ở:</b> giữ yên lặng 22:00–07:00, không hút thuốc, phân loại rác. Đặt cọc 15.000 yên cho hư hỏng.</li>
+        <li><b>Chiều về 23/11:</b> hướng về Tokyo thường tắc từ chiều đến tối ngày cuối kỳ nghỉ. Xem dự báo tắc đường trước khi đi.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="checklist">
+    <h2>✅ Checklist chuẩn bị</h2>
+    <div class="card check">
+      <label><input type="checkbox"><span>Nhắn chủ nhà: giờ đến khoảng 01:00–01:30 sáng 21/11, xin hướng dẫn tự check-in</span></label>
+      <label><input type="checkbox"><span>Xác nhận với chủ nhà đoàn 12 người (trang ghi tối đa 11) và chỗ đậu cho 3 xe</span></label>
+      <label><input type="checkbox"><span>Đặt trước bãi đậu gần nhà (akippa) nếu chủ nhà không có chỗ chắc chắn</span></label>
+      <label><input type="checkbox"><span>Đặt trước 3 chỗ đậu xe ở Arashiyama, phía Nam cầu Togetsukyō, chiều 21/11 (akippa / 特P)</span></label>
+      <label><input type="checkbox"><span>Chốt phương án Osaka chiều tối 22/11 (A, B hoặc C)</span></label>
+      <label><input type="checkbox"><span>Nếu chọn A: đặt bàn ăn tối 12 người ở Dōtonbori khoảng 18:00 ngày 22/11</span></label>
+      <label><input type="checkbox"><span>Nếu chọn B: mua vé Kaiyūkan theo giờ online cho chiều 22/11</span></label>
+      <label><input type="checkbox"><span>Thống nhất điểm hẹn ở SA trên đường đi (20/11) và đường về (23/11)</span></label>
+      <label><input type="checkbox"><span>Mỗi xe: thẻ ETC, đổ xăng, kiểm tra lốp, ghế trẻ em, 2 người lái thay phiên</span></label>
+      <label><input type="checkbox"><span>Xem dự báo lá đỏ (tenki.jp) khoảng 18–19/11</span></label>
+      <label><input type="checkbox"><span>Tiền mặt cho vé chùa, bãi đậu xe; thẻ Suica cho cả nhà</span></label>
+      <label><input type="checkbox"><span>Đồ ăn sáng cho 21/11 và 22/11 (7-Eleven cách nhà 5 phút)</span></label>
+      <label><input type="checkbox"><span>Áo ấm, giày đi bộ, xe đẩy gấp, thuốc cơ bản cho bé</span></label>
+      <label><input type="checkbox"><span>Tối 22/11: xem dự báo tắc đường cho chiều về 23/11</span></label>
+    </div>
+  </section>
+
+  <section>
+    <h2>🚑 Khẩn cấp</h2>
+    <div class="emergency">
+      <div><b>119</b>Cấp cứu / cứu hỏa</div>
+      <div><b>110</b>Cảnh sát</div>
+      <div><b>#7119</b>Tư vấn cấp cứu (Osaka)</div>
+      <div><b>#8000</b>Tư vấn y tế cho trẻ em</div>
+    </div>
+  </section>
+
+  <section class="sources">
+    <h2>🔗 Nguồn tham khảo</h2>
+    <div class="card note">
+      <ul>
+        <li><a href="https://uk.trip.com/hotels/osaka-hotel-detail-134808564/tsudoi-family-friendly-5-bedroom-2-bathroom-house/" target="_blank" rel="noopener">Trip.com: Tsudoi (phòng, giường, đậu xe, giờ yên tĩnh, đặt cọc)</a></li>
+        <li><a href="https://www.bedandbreakfast.eu/en/a/TgYaBimcGGZ4/tsudoi-30-minute-to-namba-family-friendly-5-bedroom-2-bathroom-house" target="_blank" rel="noopener">Bedandbreakfast.eu (dữ liệu Booking.com): giờ check-in 16:00–00:00, check-out 10:00</a></li>
+        <li><a href="https://livejapan.com/en/in-kansai/in-pref-osaka/in-shinsekai_tennouji_tsuruhashi/spot-lj0101877" target="_blank" rel="noopener">LIVE JAPAN: Tsudoi (11 khách, địa chỉ, ga gần nhất)</a></li>
+        <li><a href="https://komyo-ji.or.jp/koyo" target="_blank" rel="noopener">Kōmyō-ji (chính thức): mùa lá đỏ 2026, vé, P&amp;R, không có bãi đậu</a></li>
+        <li><a href="https://tenki.jp/kouyou/6/29/36558.html" target="_blank" rel="noopener">tenki.jp: dự báo lá đỏ Eikandō 2026</a></li>
+        <li><a href="https://jp.trip.com/blog/kyouto-autumn-leaves/" target="_blank" rel="noopener">Trip.com: dự báo lá đỏ Kyoto 2026</a></li>
+        <li><a href="https://weathernews.jp/koyo/spot/26120/" target="_blank" rel="noopener">Weathernews: lá đỏ Eikandō / Nanzen-ji</a></li>
+        <li><a href="https://carstay.jp/ja/media/trip/arashiyama-autumn/" target="_blank" rel="noopener">Carstay: Arashiyama mùa lá đỏ 2026 (trùng kỳ nghỉ 3 ngày)</a></li>
+        <li><a href="https://koyo.walkerplus.com/detail/ar0726e13147/" target="_blank" rel="noopener">Walkerplus: Arashiyama (bãi đậu xe)</a></li>
+        <li><a href="https://shoplist-info.com/prefectures/kyoto/arashiyama-parking/" target="_blank" rel="noopener">Bãi đậu xe đặt trước ở Arashiyama</a></li>
+        <li><a href="https://ja.kyoto.travel/event/single.php?event_id=3699" target="_blank" rel="noopener">Kyoto Navi: Tenryū-ji mở sớm 14–30/11/2026</a></li>
+        <li><a href="https://btimes.jp/kyoto/spot/1510/" target="_blank" rel="noopener">Kinkaku-ji: giờ mở cửa, vé, bãi đậu xe</a></li>
+        <li><a href="https://ja.kyoto.travel/event/single.php?event_id=3689" target="_blank" rel="noopener">Kyoto Navi: Ginkaku-ji mùa thu 2026, giá vé mới</a></li>
+        <li><a href="https://rurubu.jp/andmore/spot/80026203/" target="_blank" rel="noopener">Rurubu: Nanzen-ji</a></li>
+        <li><a href="https://odekake7.net/?p=7703" target="_blank" rel="noopener">Bãi đậu xe công viên Okazaki</a></li>
+        <li><a href="https://www.pref.nara.jp/secure/307533/ryoukinkaitei.pdf" target="_blank" rel="noopener">Tỉnh Nara: giá bãi đậu xe Noborioji</a></li>
+        <li><a href="https://www.gltjp.com/ja/article/item/20354/" target="_blank" rel="noopener">Tōdai-ji: giờ mở cửa, vé</a></li>
+        <li><a href="https://www.city.osaka.lg.jp/hodoshiryo/keizaisenryaku/0000678946.html" target="_blank" rel="noopener">Thành phố Osaka: lễ hội ánh sáng 2026 (đèn Midōsuji)</a></li>
+        <li><a href="https://www.walkerplus.com/spot/ar0727s03770/data.html" target="_blank" rel="noopener">Walkerplus: Kaiyūkan</a></li>
+        <li><a href="https://www.trvlogue.com/ja/harukas-300-osaka" target="_blank" rel="noopener">Harukas 300: giờ mở cửa, giá vé</a></li>
+        <li><a href="https://www.trvlogue.com/ja/kyoto-kiyomizudera-autumn-foliage-guide" target="_blank" rel="noopener">trvlogue: Kiyomizu-dera chiếu sáng đêm mùa thu 2026 (chưa xác nhận chính thức)</a></li>
+        <li><a href="https://cocojam.humanity-japan.jp/column/nov-3renkyu-jutai.html" target="_blank" rel="noopener">cocojam: xu hướng tắc đường kỳ nghỉ 21–23/11/2026</a></li>
+        <li><a href="https://www.jartic.or.jp/" target="_blank" rel="noopener">JARTIC: thông tin giao thông trực tiếp</a></li>
+        <li>Ảnh địa điểm: Wikimedia Commons (tác giả ghi dưới từng ảnh) và Trip.com (ảnh nhà)</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>Lịch trình tham khảo · giờ giấc là ước tính · cập nhật 13/11/2026</footer>
+
+</body>
+</html>
