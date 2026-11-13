@@ -91,6 +91,9 @@
   .emergency b{display:block;font-size:1.3rem;color:var(--sos)}
   .map{margin-top:14px;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#efe9e3}
   .map iframe{display:block;width:100%;height:320px;border:0}
+  .legs{display:flex;gap:6px;overflow-x:auto;padding:8px;background:#fff;border-bottom:1px solid var(--line);-webkit-overflow-scrolling:touch}
+  .leg{flex:0 0 auto;border:1px solid #e8c3b8;background:#fff;color:var(--red);border-radius:999px;padding:6px 12px;font:inherit;font-size:.84rem;font-weight:600;cursor:pointer}
+  .leg.on{background:var(--red);color:#fff;border-color:var(--red)}
   .map-cap{font-size:.85rem;color:var(--muted);padding:8px 12px;background:#fff;border-top:1px solid var(--line)}
   .btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
   .btn{display:inline-flex;align-items:center;gap:6px;background:var(--red);color:#fff;text-decoration:none;font-size:.88rem;font-weight:600;padding:8px 14px;border-radius:999px}
@@ -126,7 +129,7 @@
   <h1>🍁 Kyoto – Osaka – Nara mùa lá đỏ</h1>
   <p>20/11 → 23/11/2026 · Nhà ở Nishinari (Osaka) · Kōmyō-ji, Kinkaku-ji, Arashiyama, Ginkaku-ji, Nanzen-ji, Nara</p>
   <div class="chips">
-    <span class="chip">12 người · 3 gia đình</span>
+    <span class="chip">12 người · 3 gia đình · 3 bé 1 tuổi</span>
     <span class="chip">3 đêm</span>
     <span class="chip">3 xe tự lái</span>
   </div>
@@ -150,7 +153,7 @@
 
   <section id="overview">
     <div class="alert warn"><b>Tóm tắt:</b> 21–23/11 là kỳ nghỉ 3 ngày (23/11 là ngày lễ Lao động), lại trùng mùa lá đỏ đẹp nhất ở Kyoto, nên đường và các điểm tham quan sẽ rất đông. Lịch dưới đây chia các điểm ở Kyoto thành <b>2 cụm</b>: ngày 21 đi <b>phía Tây</b> (Kōmyō-ji → Kinkaku-ji → Arashiyama), ngày 22 đi <b>phía Đông</b> (Ginkaku-ji → Đường triết học → Nanzen-ji) rồi về Osaka từ đầu giờ chiều. Mọi giờ giấc là ước tính.</div>
-    <div class="alert red"><b>3 việc cần làm ngay:</b> (1) Nhắn chủ nhà báo sẽ đến khoảng <b>01:00–01:30 sáng 21/11</b>, vì giờ check-in chỉ đến 00:00. (2) Hỏi chủ nhà chỗ đậu cho <b>3 xe</b> và xác nhận đoàn <b>12 người</b> (trang đặt phòng ghi tối đa 11). (3) Đặt trước bãi đậu xe ở Arashiyama cho chiều 21/11.</div>
+    <div class="alert red"><b>2 việc cần làm sớm:</b> (1) Nhắn chủ nhà báo sẽ đến khoảng <b>01:00–01:30 sáng 21/11</b>, vì giờ check-in chỉ đến 00:00. (2) Đặt trước bãi đậu xe ở Arashiyama cho chiều 21/11.</div>
 
     <div class="overview">
       <a class="ov" href="#d20"><b>Thứ Sáu 20/11</b><span>Funabashi → Osaka</span><small>18:00 xuất phát, khoảng 01:00–01:30 đến nhà</small></a>
@@ -191,20 +194,21 @@
         <div class="fact"><b>5</b><span>phòng ngủ (mỗi phòng 1 giường đôi 1,4 m)</span></div>
         <div class="fact"><b>+1</b><span>futon ở phòng khách</span></div>
         <div class="fact"><b>2</b><span>phòng tắm có bồn</span></div>
-        <div class="fact"><b>11</b><span>khách tối đa theo trang đặt phòng</span></div>
+        <div class="fact"><b>12</b><span>người (có 3 bé 1 tuổi)</span></div>
       </div>
       <table>
         <tr><th>Check-in</th><td>16:00 – 00:00, <b>tự check-in</b>. Chủ nhà yêu cầu báo trước giờ đến; hướng dẫn nhận chìa khóa gửi sau khi đặt.</td></tr>
         <tr><th>Check-out</th><td><b>Trước 10:00</b></td></tr>
         <tr><th>Giờ yên tĩnh</th><td>22:00 – 07:00 (đêm 20/11 đến lúc khoảng 1 giờ sáng nên nói nhỏ, đóng cửa xe nhẹ)</td></tr>
-        <tr><th>Đậu xe</th><td>Không có chỗ đậu trong nhà. Trang Trip.com ghi có bãi công cộng gần nhà khoảng <b>500 yên/ngày</b>, không đặt trước được. <b>Cần hỏi chủ nhà vị trí bãi cho 3 xe.</b></td></tr>
+        <tr><th>Đậu xe</th><td>Bãi công cộng gần nhà, khoảng <b>500 yên/ngày</b> (theo Trip.com)</td></tr>
+        <tr><th>Em bé</th><td>Nhà không thêm được cũi hay giường phụ, các bé ngủ cùng bố mẹ</td></tr>
         <tr><th>Tiện nghi</th><td>Bếp nhỏ (bếp nấu, lò vi sóng), máy giặt, máy sấy, Wi-Fi, máy lạnh, <b>máy chiếu màn hình lớn</b> ở phòng khách, toilet rửa tự động</td></tr>
         <tr><th>Đặt cọc</th><td>15.000 yên (trả lại nếu không hư hỏng)</td></tr>
         <tr><th>Gần nhà</th><td>Shinsekai / tháp Tsutenkaku khoảng 2,4 km · Spa World khoảng 2,2 km · Namba khoảng 30 phút</td></tr>
         <tr><th>Link</th><td><a href="https://www.booking.com/hotel/jp/tsudoi-all-private-br-2-bldg-house.vi.html" target="_blank" rel="noopener">Xem trên Booking.com</a></td></tr>
       </table>
       <div class="map">
-        <iframe src="https://maps.google.com/maps?q=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ nhà ở"></iframe>
+        <iframe src="https://maps.google.com/maps?q=34.636982,135.487152&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ nhà ở"></iframe>
         <div class="map-cap">📍 Tsudoi 集 – 千本北2-8-7, Nishinari, Osaka</div>
       </div>
     </div>
@@ -222,15 +226,15 @@
         <li><span class="time">18:00–20:00</span>Giờ tan tầm tối thứ Sáu ở Shuto, có thể chậm thêm 30–60 phút.</li>
         <li><span class="time">~20:30</span>Nghỉ ăn tối ở một SA trên Shin-Tomei (ví dụ NEOPASA Suruga-wan Numazu hoặc Shizuoka). Hẹn 3 xe gặp nhau ở đây.</li>
         <li><span class="time">~23:00</span>Nghỉ lần 2 (ví dụ Kariya Highway Oasis trên Isewangan), đổi tài xế nếu được.</li>
-        <li class="key"><span class="time">~01:00–01:30</span>Đến nhà. Đưa xe vào bãi chủ nhà chỉ, tự check-in, giữ yên lặng. Ngủ đến khoảng 08:00.</li>
+        <li class="key"><span class="time">~01:00–01:30</span>Đến nhà. Gửi xe ở bãi gần nhà, tự check-in, giữ yên lặng. Ngủ đến khoảng 08:00.</li>
       </ul>
-      <div class="infobox amber"><b>Lái đêm khoảng 7 tiếng:</b> mỗi xe nên có 2 người lái thay phiên, nghỉ khoảng 2 tiếng một lần. Trẻ dưới 6 tuổi bắt buộc ngồi ghế trẻ em.</div>
+      <div class="infobox amber"><b>Lái đêm khoảng 7 tiếng:</b> mỗi xe nên có 2 người lái thay phiên, nghỉ khoảng 2 tiếng một lần. Các bé 1 tuổi ngồi ghế trẻ em (bắt buộc với trẻ dưới 6 tuổi); chạy đêm các bé dễ ngủ trên xe.</div>
       <div class="map">
-        <iframe src="https://maps.google.com/maps?saddr=Funabashi%2C+Chiba&amp;daddr=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ ngày 20/11"></iframe>
+        <iframe src="https://maps.google.com/maps?saddr=35.694237,139.982208&amp;daddr=34.636982,135.487152&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ ngày 20/11"></iframe>
         <div class="map-cap">🚗 Funabashi → Nhà ở (Nishinari, Osaka)</div>
       </div>
       <div class="btns">
-        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Funabashi%2C+Chiba&amp;destination=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Chỉ đường Funabashi → nhà ở</a>
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=35.694237,139.982208&amp;destination=34.636982,135.487152&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Chỉ đường Funabashi → nhà ở</a>
       </div>
     </div>
 
@@ -275,14 +279,22 @@
       </div>
 
       <div class="map">
-        <iframe src="https://maps.google.com/maps?saddr=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;daddr=%E9%95%B7%E5%B2%A1%E4%BA%AC%E9%A7%85%E8%A5%BF%E9%A7%90%E8%BB%8A%E5%A0%B4+to:%E9%87%91%E9%96%A3%E5%AF%BA+to:%E9%98%AA%E6%80%A5%E5%B5%90%E5%B1%B1%E9%A7%85+to:%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ ngày 21/11"></iframe>
-        <div class="map-cap">🚗 Nhà ở → Bãi đậu ga Nagaokakyō (P&amp;R đi Kōmyō-ji) → Kinkaku-ji → Arashiyama (ga Hankyu) → Nhà ở</div>
+        <div class="legs">
+          <button type="button" class="leg on" data-src="https://maps.google.com/maps?saddr=34.636982,135.487152&amp;daddr=34.922802,135.699020&amp;output=embed" data-cap="🚗 Nhà ở → bãi đậu xe ga JR Nagaokakyō (cửa Tây), khoảng 1 tiếng">1 · Nhà → bãi Nagaokakyō</button>
+          <button type="button" class="leg" data-src="https://maps.google.com/maps?saddr=34.922802,135.699020&amp;daddr=%E4%BA%AC%E9%83%BD%E5%BA%9C%E9%95%B7%E5%B2%A1%E4%BA%AC%E5%B8%82%E7%B2%9F%E7%94%9F%E8%A5%BF%E6%9D%A1%E3%83%8E%E5%86%8526-1&amp;output=embed" data-cap="🚌 Bãi đậu ga Nagaokakyō → Kōmyō-ji: đi xe buýt Hankyu theo đường này (khoảng 10–15 phút)">2 · Bãi → Kōmyō-ji</button>
+          <button type="button" class="leg" data-src="https://maps.google.com/maps?saddr=34.922802,135.699020&amp;daddr=35.039619,135.729279&amp;output=embed" data-cap="🚗 Bãi đậu ga Nagaokakyō → Kinkaku-ji, khoảng 20 km">3 · → Kinkaku-ji</button>
+          <button type="button" class="leg" data-src="https://maps.google.com/maps?saddr=35.039619,135.729279&amp;daddr=35.010315,135.682251&amp;output=embed" data-cap="🚗 Kinkaku-ji → Arashiyama (phía ga Hankyu Arashiyama, bờ Nam sông)">4 · → Arashiyama</button>
+          <button type="button" class="leg" data-src="https://maps.google.com/maps?saddr=35.010315,135.682251&amp;daddr=34.636982,135.487152&amp;output=embed" data-cap="🚗 Arashiyama → nhà ở, khoảng 55 km">5 · Arashiyama → nhà</button>
+        </div>
+        <iframe src="https://maps.google.com/maps?saddr=34.636982,135.487152&amp;daddr=34.922802,135.699020&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ ngày 21/11"></iframe>
+        <div class="map-cap">🚗 Nhà ở → bãi đậu xe ga JR Nagaokakyō (cửa Tây), khoảng 1 tiếng</div>
       </div>
       <div class="btns">
-        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;destination=%E9%95%B7%E5%B2%A1%E4%BA%AC%E9%A7%85%E8%A5%BF%E9%A7%90%E8%BB%8A%E5%A0%B4&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Nhà → bãi ga Nagaokakyō</a>
-        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E9%95%B7%E5%B2%A1%E4%BA%AC%E9%A7%85%E8%A5%BF%E9%A7%90%E8%BB%8A%E5%A0%B4&amp;destination=%E9%87%91%E9%96%A3%E5%AF%BA&amp;travelmode=driving" target="_blank" rel="noopener">🧭 → Kinkaku-ji</a>
-        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E9%87%91%E9%96%A3%E5%AF%BA&amp;destination=%E9%98%AA%E6%80%A5%E5%B5%90%E5%B1%B1%E9%A7%85&amp;travelmode=driving" target="_blank" rel="noopener">🧭 → Arashiyama</a>
-        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E9%98%AA%E6%80%A5%E5%B5%90%E5%B1%B1%E9%A7%85&amp;destination=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Arashiyama → nhà</a>
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=34.636982,135.487152&amp;destination=34.922802,135.699020&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Nhà → bãi ga Nagaokakyō</a>
+        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=34.922802,135.699020&amp;destination=%E4%BA%AC%E9%83%BD%E5%BA%9C%E9%95%B7%E5%B2%A1%E4%BA%AC%E5%B8%82%E7%B2%9F%E7%94%9F%E8%A5%BF%E6%9D%A1%E3%83%8E%E5%86%8526-1&amp;travelmode=transit" target="_blank" rel="noopener">🚌 Bãi đậu → Kōmyō-ji (xe buýt)</a>
+        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=34.922802,135.699020&amp;destination=35.039619,135.729279&amp;travelmode=driving" target="_blank" rel="noopener">🧭 → Kinkaku-ji</a>
+        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=35.039619,135.729279&amp;destination=35.010315,135.682251&amp;travelmode=driving" target="_blank" rel="noopener">🧭 → Arashiyama</a>
+        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=35.010315,135.682251&amp;destination=34.636982,135.487152&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Arashiyama → nhà</a>
       </div>
     </div>
 
@@ -296,7 +308,7 @@
         <li><span class="time">08:15</span>Đậu xe. Đi taxi (3 xe, khoảng 10 phút) hoặc xe buýt thành phố số 5 từ trạm 岡崎公園 美術館・平安神宮前 đến trạm 銀閣寺道.</li>
         <li class="key"><span class="time">08:40–09:40</span><b>Ginkaku-ji – Chùa Bạc (銀閣寺)</b>. Mở 8:30–17:00. Từ 4/2026 vé tăng lên <b>1.000 yên</b> người lớn, 500 yên học sinh tiểu học và THCS.</li>
         <li class="key"><span class="time">09:40–11:00</span><b>Đường triết học (哲学の道)</b>, khoảng 2 km dọc con kênh. Có thể ghé chùa Hōnen-in (cổng mái tranh, miễn phí vào sân), đi ngang trước <b>Eikandō</b> (điểm lá đỏ nổi tiếng, vào cửa tính phí riêng).</li>
-        <li class="key"><span class="time">11:00–12:00</span><b>Nanzen-ji (南禅寺)</b>: sân chùa miễn phí. Leo cổng <b>Sanmon</b> ngắm toàn cảnh (600 yên), xem <b>cầu dẫn nước Suirokaku</b> bằng gạch đỏ (miễn phí), vườn Hōjō (600 yên). Mở 8:40–17:00.</li>
+        <li class="key"><span class="time">11:00–12:00</span><b>Nanzen-ji (南禅寺)</b>: sân chùa miễn phí. Leo cổng <b>Sanmon</b> ngắm toàn cảnh (600 yên; cầu thang rất dốc, không nên bế bé lên), xem <b>cầu dẫn nước Suirokaku</b> bằng gạch đỏ (miễn phí), vườn Hōjō (600 yên). Mở 8:40–17:00.</li>
         <li><span class="time">12:00–13:00</span>Ăn trưa. Món đặc trưng gần Nanzen-ji là <b>đậu phụ nấu yudōfu</b> (thường phải xếp hàng), hoặc ăn quanh khu Okazaki / đền Heian.</li>
         <li><span class="time">13:00</span>Đi bộ về bãi Okazaki (khoảng 10–15 phút), đi ngang cổng torii đỏ khổng lồ của đền Heian.</li>
         <li class="key"><span class="time">13:30</span>Lái xe về Osaka (khoảng 1–1,5 tiếng). Về nhà khoảng 15:00, đậu xe, nghỉ ngơi.</li>
@@ -323,13 +335,20 @@
       </div>
 
       <div class="map">
-        <iframe src="https://maps.google.com/maps?saddr=%E9%8A%80%E9%96%A3%E5%AF%BA&amp;daddr=%E5%93%B2%E5%AD%A6%E3%81%AE%E9%81%93+to:%E5%8D%97%E7%A6%85%E5%AF%BA+to:%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B2%A1%E5%B4%8E%E5%85%AC%E5%9C%92%E9%A7%90%E8%BB%8A%E5%A0%B4&amp;dirflg=w&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ đi bộ ngày 22/11"></iframe>
-        <div class="map-cap">🚶 Đi bộ: Ginkaku-ji → Đường triết học → Nanzen-ji → bãi đậu Okazaki</div>
+        <div class="legs">
+          <button type="button" class="leg on" data-src="https://maps.google.com/maps?saddr=34.636982,135.487152&amp;daddr=35.013077,135.781433&amp;output=embed" data-cap="🚗 Nhà ở → bãi đậu xe công viên Okazaki, khoảng 1–1,25 tiếng">1 · Nhà → bãi Okazaki</button>
+          <button type="button" class="leg" data-src="https://maps.google.com/maps?saddr=35.013077,135.781433&amp;daddr=35.026985,135.798218&amp;output=embed" data-cap="🚕 Bãi Okazaki → Ginkaku-ji (taxi hoặc xe buýt số 5), khoảng 10–15 phút">2 · → Ginkaku-ji</button>
+          <button type="button" class="leg" data-src="https://maps.google.com/maps?saddr=35.026985,135.798218&amp;daddr=35.011983,135.794389&amp;dirflg=w&amp;output=embed" data-cap="🚶 Ginkaku-ji → Nanzen-ji, đi bộ khoảng 2 km theo Đường triết học dọc con kênh">3 · Ginkaku-ji → Nanzen-ji</button>
+          <button type="button" class="leg" data-src="https://maps.google.com/maps?saddr=35.011983,135.794389&amp;daddr=35.013077,135.781433&amp;dirflg=w&amp;output=embed" data-cap="🚶 Nanzen-ji → bãi đậu Okazaki, đi bộ khoảng 10–15 phút">4 · Nanzen-ji → bãi</button>
+          <button type="button" class="leg" data-src="https://maps.google.com/maps?saddr=35.013077,135.781433&amp;daddr=34.636982,135.487152&amp;output=embed" data-cap="🚗 Bãi Okazaki → nhà ở, khoảng 1–1,5 tiếng">5 · Okazaki → nhà</button>
+        </div>
+        <iframe src="https://maps.google.com/maps?saddr=34.636982,135.487152&amp;daddr=35.013077,135.781433&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ ngày 22/11"></iframe>
+        <div class="map-cap">🚗 Nhà ở → bãi đậu xe công viên Okazaki, khoảng 1–1,25 tiếng</div>
       </div>
       <div class="btns">
-        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;destination=%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B2%A1%E5%B4%8E%E5%85%AC%E5%9C%92%E9%A7%90%E8%BB%8A%E5%A0%B4&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Nhà → bãi Okazaki</a>
-        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B2%A1%E5%B4%8E%E5%85%AC%E5%9C%92%E9%A7%90%E8%BB%8A%E5%A0%B4&amp;destination=%E9%8A%80%E9%96%A3%E5%AF%BA&amp;travelmode=transit" target="_blank" rel="noopener">🚌 Okazaki → Ginkaku-ji</a>
-        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B2%A1%E5%B4%8E%E5%85%AC%E5%9C%92%E9%A7%90%E8%BB%8A%E5%A0%B4&amp;destination=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Okazaki → nhà</a>
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=34.636982,135.487152&amp;destination=35.013077,135.781433&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Nhà → bãi Okazaki</a>
+        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=35.013077,135.781433&amp;destination=35.026985,135.798218&amp;travelmode=transit" target="_blank" rel="noopener">🚌 Okazaki → Ginkaku-ji</a>
+        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=35.013077,135.781433&amp;destination=34.636982,135.487152&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Okazaki → nhà</a>
       </div>
     </div>
 
@@ -340,7 +359,7 @@
         <li><span class="time">07:00</span>Dậy, dọn đồ, phân loại rác theo hướng dẫn của nhà, kiểm tra không để quên đồ.</li>
         <li class="key"><span class="time">08:30–09:00</span>Check-out (hạn chót 10:00). Đi sớm để đến Nara trước khi đường vào công viên tắc.</li>
         <li><span class="time">~10:00</span>Đến <b>bãi đậu xe Noborioji</b> (登大路自動車駐車場) cạnh trụ sở tỉnh Nara, khoảng 40 km, 1 tiếng. Ngày lễ: 1.000 yên khi vào, cộng 500 yên mỗi giờ, tối đa 2.000 yên/ngày.</li>
-        <li class="key"><span class="time">10:00–10:45</span><b>Công viên Nara</b>: cho hươu ăn bánh senbei. Hươu có thể húc hoặc cắn khi đòi bánh, người lớn nên đi cạnh các bé và cất bản đồ, túi giấy.</li>
+        <li class="key"><span class="time">10:00–10:45</span><b>Công viên Nara</b>: cho hươu ăn bánh senbei. Hươu có thể húc hoặc cắn khi đòi bánh: nên bế hoặc địu các bé, không để bé cầm bánh, cất bản đồ và túi giấy.</li>
         <li class="key"><span class="time">10:45–12:00</span><b>Tōdai-ji</b>: cổng Nandaimon → điện Đại Phật (Daibutsuden). Tháng 11–3 mở 8:00–17:00. Vé 800 yên từ THCS trở lên, 400 yên học sinh tiểu học. Trẻ có thể thử chui qua lỗ ở chân cột trong điện.</li>
         <li><span class="time">12:00–13:00</span>Ăn trưa quanh phố Higashimuki / Sanjō-dōri. Có thể xem quán mochi Nakatanidō giã bánh tốc độ cao.</li>
         <li class="key"><span class="time">13:00 (muộn nhất 13:30)</span>Rời Nara về Funabashi, khoảng <b>500 km</b>. Chiều tối ngày cuối kỳ nghỉ, hướng về Tokyo thường tắc, nhất là đoạn cuối trên Tomei và Shin-Tomei.</li>
@@ -363,12 +382,17 @@
       </div>
 
       <div class="map">
-        <iframe src="https://maps.google.com/maps?saddr=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;daddr=%E7%99%BB%E5%A4%A7%E8%B7%AF%E8%87%AA%E5%8B%95%E8%BB%8A%E9%A7%90%E8%BB%8A%E5%A0%B4+to:Funabashi%2C+Chiba&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ ngày 23/11"></iframe>
-        <div class="map-cap">🚗 Nhà ở → Bãi đậu Noborioji (Nara) → Funabashi</div>
+        <div class="legs">
+          <button type="button" class="leg on" data-src="https://maps.google.com/maps?saddr=34.636982,135.487152&amp;daddr=34.686161,135.833725&amp;output=embed" data-cap="🚗 Nhà ở → bãi đậu xe Noborioji (Nara), khoảng 40 km">1 · Nhà → Nara</button>
+          <button type="button" class="leg" data-src="https://maps.google.com/maps?saddr=34.686161,135.833725&amp;daddr=34.689170,135.839720&amp;dirflg=w&amp;output=embed" data-cap="🚶 Bãi Noborioji → công viên Nara → điện Đại Phật Tōdai-ji, đi bộ khoảng 10–15 phút">2 · Bãi → Tōdai-ji</button>
+          <button type="button" class="leg" data-src="https://maps.google.com/maps?saddr=34.686161,135.833725&amp;daddr=35.694237,139.982208&amp;output=embed" data-cap="🚗 Nara → Funabashi, khoảng 500 km">3 · Nara → Funabashi</button>
+        </div>
+        <iframe src="https://maps.google.com/maps?saddr=34.636982,135.487152&amp;daddr=34.686161,135.833725&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ ngày 23/11"></iframe>
+        <div class="map-cap">🚗 Nhà ở → bãi đậu xe Noborioji (Nara), khoảng 40 km</div>
       </div>
       <div class="btns">
-        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;destination=%E7%99%BB%E5%A4%A7%E8%B7%AF%E8%87%AA%E5%8B%95%E8%BB%8A%E9%A7%90%E8%BB%8A%E5%A0%B4&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Nhà → Nara</a>
-        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E7%99%BB%E5%A4%A7%E8%B7%AF%E8%87%AA%E5%8B%95%E8%BB%8A%E9%A7%90%E8%BB%8A%E5%A0%B4&amp;destination=Funabashi%2C+Chiba&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Nara → Funabashi</a>
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=34.636982,135.487152&amp;destination=34.686161,135.833725&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Nhà → Nara</a>
+        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=34.686161,135.833725&amp;destination=35.694237,139.982208&amp;travelmode=driving" target="_blank" rel="noopener">🧭 Nara → Funabashi</a>
       </div>
     </div>
   </section>
@@ -427,10 +451,19 @@
             <span class="credit">Ảnh: <a href="https://commons.wikimedia.org/wiki/File:Tsutenkaku_and_Shinsekai_at_night_20110122.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption>
         </figure>
       </div>
+      <div class="map">
+        <div class="legs">
+          <button type="button" class="leg on" data-src="https://maps.google.com/maps?q=34.668869,135.502274&amp;z=16&amp;output=embed" data-cap="📍 A · Dōtonbori (cầu Ebisu, biển Glico). Đi tàu điện ngầm từ ga Kishinosato đến Namba">A · Dōtonbori</button>
+          <button type="button" class="leg" data-src="https://maps.google.com/maps?saddr=34.636982,135.487152&amp;daddr=34.654472,135.428889&amp;output=embed" data-cap="🚗 B · Nhà ở → thủy cung Kaiyūkan (khu Tempōzan)">B · Kaiyūkan</button>
+          <button type="button" class="leg" data-src="https://maps.google.com/maps?saddr=34.636982,135.487152&amp;daddr=34.645737,135.514252&amp;output=embed" data-cap="🚕 C · Nhà ở → Abeno Harukas; Shinsekai cách đó khoảng 15 phút đi bộ">C · Abeno Harukas</button>
+        </div>
+        <iframe src="https://maps.google.com/maps?q=34.668869,135.502274&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ Osaka 22/11"></iframe>
+        <div class="map-cap">📍 A · Dōtonbori (cầu Ebisu, biển Glico). Đi tàu điện ngầm từ ga Kishinosato đến Namba</div>
+      </div>
       <div class="btns">
-        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;destination=%E9%81%93%E9%A0%93%E5%A0%80&amp;travelmode=transit" target="_blank" rel="noopener">🚇 A · Nhà → Dōtonbori</a>
-        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;destination=%E6%B5%B7%E9%81%8A%E9%A4%A8&amp;travelmode=driving" target="_blank" rel="noopener">🧭 B · Nhà → Kaiyūkan</a>
-        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%88%90%E5%8C%BA%E5%8D%83%E6%9C%AC%E5%8C%972-8-7&amp;destination=%E3%81%82%E3%81%B9%E3%81%AE%E3%83%8F%E3%83%AB%E3%82%AB%E3%82%B9&amp;travelmode=driving" target="_blank" rel="noopener">🧭 C · Nhà → Abeno Harukas</a>
+        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=34.636982,135.487152&amp;destination=34.668869,135.502274&amp;travelmode=transit" target="_blank" rel="noopener">🚇 A · Nhà → Dōtonbori</a>
+        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=34.636982,135.487152&amp;destination=34.654472,135.428889&amp;travelmode=driving" target="_blank" rel="noopener">🧭 B · Nhà → Kaiyūkan</a>
+        <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&amp;origin=34.636982,135.487152&amp;destination=34.645737,135.514252&amp;travelmode=driving" target="_blank" rel="noopener">🧭 C · Nhà → Abeno Harukas</a>
       </div>
     </div>
   </section>
@@ -465,7 +498,7 @@
           <tr><td><b>Ginkaku-ji</b></td><td>1.000 yên</td><td>Tiểu học, THCS 500 yên</td><td>8:30–17:00</td><td>Không có bãi riêng, dùng bãi Okazaki</td></tr>
           <tr><td><b>Nanzen-ji</b></td><td>Sân miễn phí; Sanmon 600 yên; vườn Hōjō 600 yên</td><td>Tiểu học, THCS 400 yên mỗi điểm</td><td>8:40–17:00</td><td>Mùa lá đỏ chỉ cho xe buýt; dùng bãi Okazaki</td></tr>
           <tr><td><b>Tōdai-ji</b> (điện Đại Phật)</td><td>800 yên</td><td>Tiểu học 400 yên</td><td>8:00–17:00 (tháng 11–3)</td><td>Bãi Noborioji: ngày lễ tối đa 2.000 yên</td></tr>
-          <tr><td><b>Kaiyūkan</b> (PA B)</td><td>Từ 2.700 yên</td><td>Tiểu học, THCS từ 1.400 yên; từ 3 tuổi từ 700 yên</td><td>Thường 10:00–20:00</td><td>Bãi khu Tempōzan</td></tr>
+          <tr><td><b>Kaiyūkan</b> (PA B)</td><td>Từ 2.700 yên</td><td>Tiểu học, THCS từ 1.400 yên; từ 3 tuổi từ 700 yên; dưới 3 tuổi miễn phí</td><td>Thường 10:00–20:00</td><td>Bãi khu Tempōzan</td></tr>
           <tr><td><b>Harukas 300</b> (PA C)</td><td>Khoảng 2.200 yên</td><td>—</td><td>9:00–22:00</td><td>Nên đi taxi</td></tr>
         </table>
       </div>
@@ -482,7 +515,7 @@
         <tr><td><b>Phòng 3, 4</b></td><td>Mỗi phòng 1 giường đôi 1,4 m</td><td>Nhà anh Nhân (4)</td></tr>
         <tr><td><b>Phòng 5 + phòng khách</b></td><td>1 giường đôi + 1 futon</td><td>Nhà Hải (4)</td></tr>
       </table>
-      <p class="note">Trang đặt phòng ghi tối đa <b>11 khách</b>, đoàn có 12 người, nên cần xác nhận với chủ nhà (trẻ nhỏ ngủ chung giường thường được chấp nhận nhưng phải hỏi trước). Nhà có 2 phòng tắm, chia giờ tắm: trẻ em tắm trước.</p>
+      <p class="note">3 bé 1 tuổi ngủ chung giường với bố mẹ (nhà không có cũi). Nhà có 2 phòng tắm có bồn: tắm cho các bé trước, người lớn tắm sau.</p>
     </div>
   </section>
 
@@ -491,11 +524,10 @@
     <div class="card">
       <ul>
         <li><b>Đến muộn:</b> giờ check-in 16:00–00:00, đoàn đến khoảng 01:00–01:30. Phải nhắn chủ nhà trước qua Booking.com và chụp lại hướng dẫn tự check-in, mã khóa.</li>
-        <li><b>Đậu xe ở nhà:</b> không có chỗ trong nhà. Hỏi chủ nhà bãi gần nhất đủ cho 3 xe. Nên đặt trước trên akippa quanh khu 千本北 để không phải tìm chỗ lúc 1 giờ sáng.</li>
         <li><b>Kōmyō-ji:</b> mùa lá đỏ không có bãi đậu, khu xung quanh cấm đỗ hoàn toàn. Bắt buộc gửi xe ở ga Nagaokakyō rồi đi xe buýt (được giảm giá vé).</li>
         <li><b>Kyoto mùa lá đỏ + kỳ nghỉ 3 ngày:</b> đường quanh các điểm tham quan tắc từ trước trưa. Lịch đã chừa thời gian, nhưng nếu trễ thì bỏ bớt điểm tùy chọn.</li>
         <li><b>Giữ liên lạc 3 xe:</b> chia sẻ vị trí trực tiếp; mỗi điểm đến chọn trước một điểm hẹn (ví dụ cổng chính).</li>
-        <li><b>Trẻ em:</b> trẻ dưới 6 tuổi phải ngồi ghế trẻ em. Mang xe đẩy gấp gọn; Đường triết học và Arashiyama đi bộ nhiều.</li>
+        <li><b>3 bé 1 tuổi:</b> ngồi ghế trẻ em trên xe. Ở các chùa có nhiều bậc đá và sỏi (Kōmyō-ji, Ginkaku-ji, Tenryū-ji) <b>địu</b> tiện hơn xe đẩy; xe đẩy gọn dùng được ở Đường triết học, Arashiyama, Namba. Trong Kōmyō-ji cấm ăn uống, nên cho bé ăn trước khi vào.</li>
         <li><b>Thời tiết:</b> cuối tháng 11 ở Kyoto sáng sớm và tối lạnh, mang áo khoác, đi giày thoải mái.</li>
         <li><b>Nhà ở:</b> giữ yên lặng 22:00–07:00, không hút thuốc, phân loại rác. Đặt cọc 15.000 yên cho hư hỏng.</li>
         <li><b>Chiều về 23/11:</b> hướng về Tokyo thường tắc từ chiều đến tối ngày cuối kỳ nghỉ. Xem dự báo tắc đường trước khi đi.</li>
@@ -507,8 +539,6 @@
     <h2>✅ Checklist chuẩn bị</h2>
     <div class="card check">
       <label><input type="checkbox"><span>Nhắn chủ nhà: giờ đến khoảng 01:00–01:30 sáng 21/11, xin hướng dẫn tự check-in</span></label>
-      <label><input type="checkbox"><span>Xác nhận với chủ nhà đoàn 12 người (trang ghi tối đa 11) và chỗ đậu cho 3 xe</span></label>
-      <label><input type="checkbox"><span>Đặt trước bãi đậu gần nhà (akippa) nếu chủ nhà không có chỗ chắc chắn</span></label>
       <label><input type="checkbox"><span>Đặt trước 3 chỗ đậu xe ở Arashiyama, phía Nam cầu Togetsukyō, chiều 21/11 (akippa / 特P)</span></label>
       <label><input type="checkbox"><span>Chốt phương án Osaka chiều tối 22/11 (A, B hoặc C)</span></label>
       <label><input type="checkbox"><span>Nếu chọn A: đặt bàn ăn tối 12 người ở Dōtonbori khoảng 18:00 ngày 22/11</span></label>
@@ -518,7 +548,8 @@
       <label><input type="checkbox"><span>Xem dự báo lá đỏ (tenki.jp) khoảng 18–19/11</span></label>
       <label><input type="checkbox"><span>Tiền mặt cho vé chùa, bãi đậu xe; thẻ Suica cho cả nhà</span></label>
       <label><input type="checkbox"><span>Đồ ăn sáng cho 21/11 và 22/11 (7-Eleven cách nhà 5 phút)</span></label>
-      <label><input type="checkbox"><span>Áo ấm, giày đi bộ, xe đẩy gấp, thuốc cơ bản cho bé</span></label>
+      <label><input type="checkbox"><span>Đồ cho 3 bé: địu, xe đẩy gọn, sữa, bình, tã, đồ ăn dặm, quần áo ấm, thuốc hạ sốt</span></label>
+      <label><input type="checkbox"><span>Áo ấm, giày đi bộ thoải mái cho người lớn</span></label>
       <label><input type="checkbox"><span>Tối 22/11: xem dự báo tắc đường cho chiều về 23/11</span></label>
     </div>
   </section>
@@ -539,7 +570,7 @@
       <ul>
         <li><a href="https://uk.trip.com/hotels/osaka-hotel-detail-134808564/tsudoi-family-friendly-5-bedroom-2-bathroom-house/" target="_blank" rel="noopener">Trip.com: Tsudoi (phòng, giường, đậu xe, giờ yên tĩnh, đặt cọc)</a></li>
         <li><a href="https://www.bedandbreakfast.eu/en/a/TgYaBimcGGZ4/tsudoi-30-minute-to-namba-family-friendly-5-bedroom-2-bathroom-house" target="_blank" rel="noopener">Bedandbreakfast.eu (dữ liệu Booking.com): giờ check-in 16:00–00:00, check-out 10:00</a></li>
-        <li><a href="https://livejapan.com/en/in-kansai/in-pref-osaka/in-shinsekai_tennouji_tsuruhashi/spot-lj0101877" target="_blank" rel="noopener">LIVE JAPAN: Tsudoi (11 khách, địa chỉ, ga gần nhất)</a></li>
+        <li><a href="https://livejapan.com/en/in-kansai/in-pref-osaka/in-shinsekai_tennouji_tsuruhashi/spot-lj0101877" target="_blank" rel="noopener">LIVE JAPAN: Tsudoi (địa chỉ, ga gần nhất)</a></li>
         <li><a href="https://komyo-ji.or.jp/koyo" target="_blank" rel="noopener">Kōmyō-ji (chính thức): mùa lá đỏ 2026, vé, P&amp;R, không có bãi đậu</a></li>
         <li><a href="https://tenki.jp/kouyou/6/29/36558.html" target="_blank" rel="noopener">tenki.jp: dự báo lá đỏ Eikandō 2026</a></li>
         <li><a href="https://jp.trip.com/blog/kyouto-autumn-leaves/" target="_blank" rel="noopener">Trip.com: dự báo lá đỏ Kyoto 2026</a></li>
@@ -569,5 +600,16 @@
 
 <footer>Lịch trình tham khảo · giờ giấc là ước tính · cập nhật 13/11/2026</footer>
 
+<script>
+document.querySelectorAll('.map').forEach(function(m){
+  var f=m.querySelector('iframe'),c=m.querySelector('.map-cap');
+  m.querySelectorAll('.leg').forEach(function(b){
+    b.addEventListener('click',function(){
+      m.querySelectorAll('.leg').forEach(function(x){x.classList.remove('on')});
+      b.classList.add('on'); f.src=b.getAttribute('data-src'); c.textContent=b.getAttribute('data-cap');
+    });
+  });
+});
+</script>
 </body>
 </html>
